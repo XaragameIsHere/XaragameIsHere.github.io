@@ -1,0 +1,155 @@
+/* CSS is how you can add style to your website, such as colors, fonts, and positioning of your
+   HTML content. To learn how to do something, just try searching Google for questions like
+   "how to change link color." */
+
+body {
+  
+  background-image: url("images/viewOfCapri.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed; 
+  background-size: 100% 100%;
+  color: black;
+	font-family:"Pixelated MS Sans Serif";
+}
+
+
+@keyframes rotation {
+   50%{
+    transform: rotate(-45deg);
+  }
+  
+}
+
+@font-face {
+  font-family: "Windows98 Font";
+  src: url("fonts/Windows Regular.ttf")
+}
+
+@font-face {
+  font-family: "HelveticaNeue";
+  src: url("fonts/HelveticaNeue.ttf")
+}
+
+#Scroll_Group_1 {
+	mix-blend-mode: normal;
+	position: absolute;
+	width: 100%;
+	height: 300px;
+	left: 80px;
+	top: 167px;
+	overflow: scroll;
+}
+
+#Rectangle_6 {
+		fill: rgba(135,135,135,1);
+		stroke: rgba(57,57,57,1);
+		stroke-width: 5px;
+		stroke-linejoin: miter;
+		stroke-linecap: butt;
+		stroke-miterlimit: 4;
+		shape-rendering: auto;
+	}
+	.Rectangle_6 {
+	  background-color: #878787;
+	  border: 5px solid #393939;
+		overflow: visible;
+		width: 100%;
+		height: 72px;
+		left: 0px;
+		top: 0px;
+	}
+	#Rectangle_3 {
+		fill: rgba(255,255,255,1);
+		stroke: rgba(112,112,112,1);
+		stroke-width: 1px;
+		stroke-linejoin: miter;
+		stroke-linecap: butt;
+		stroke-miterlimit: 4;
+		shape-rendering: auto;
+	}
+	.Rectangle_3 {
+		position: absolute;
+		overflow: visible;
+		width: 1092px;
+		height: 548px;
+		left: 80px;
+		top: 167px;
+	}
+
+#tansFlag{
+  transform: rotate(45deg);
+  height: 40px;
+  width: 100px;
+  bottom: 10%;
+  right: 75%;
+  position: static;
+  /*animation: rotation 2s infinite linear;*/
+}
+a:link { text-decoration: none; }
+
+.main-body-text {
+  display: inline;
+}
+
+.tooltip {
+  position: relative;
+  display: inline;
+  border-bottom: 1px dotted black;
+}
+
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 120px;
+  background-color: black;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+
+  /* Position the tooltip */
+  position: absolute;
+  z-index: 1;
+}
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+}
+
+#boxtext {
+  display: inline;
+  font-family: HelveticaNeue;
+  /*font-size: 16px;*/
+  font-size: 1vw;
+  padding: 20px;
+}
+
+#listbox {
+  
+  border-bottom: 5px solid #9fa3ab;
+  width: 100%; 
+  /*opacity: 0;*/
+}
+
+#window {
+  min-width: 35%;
+  max-width: 45%;
+  position: absolute;
+  background-color: #eda4b2;
+  border-top: 4px solid white;
+  border-left: 4px solid white;
+  border-bottom: 4px solid black;
+  border-right: 4px solid black;
+  
+}
+
+
+
+#inner1 {
+  height: 100%;
+  border: 1px solid blue;
+}
+
+#inner2 {
+  height: 100%;
+  border: 1px solid green;
+}
