@@ -14,7 +14,7 @@
 	<div class="window" style="width: 100%; position: absolute; bottom: 0; left: 0; height: 5%" >
 	  <div class="status-bar" style="height: 100%">
 		  
-		<button style="width: 10%; font-size: 2vw; font-family: HelveticaNeue; " ><img src="images/winbows.png" style=" width: 17%;">Start</button>
+		<button style="width: 10%; font-size: 2vw; font-family: HelveticaNeue; " ><img src="images/winbows.png" alt="start" style=" width: 17%;">Start</button>
 		<button onclick="window.location.href='https://www.youtube.com/@XaragameIsHere';" style="width: 5%; font-size: 2vw;"><img src="images/youboob.png" style=" width: 80%;" alt="Youtube" href="https://www.youtube.com/@XaragameIsHere"></button>
 		<button onclick="window.location.href='https://xaragame.itch.io/';" style="width: 5%; font-size: 2vw;"><img src="images/itch.svg" style=" width: 50%;" alt="Itch"></button>
 		<button onclick="window.location.href='https://steamcommunity.com/id/Za-ra-game/';" style="width: 5%; font-size: 2vw;"><img src="images/steam.png" style=" width: 50%;" alt="Steam"></button>
@@ -27,7 +27,7 @@
 	<div class="window" style="position: absolute;  width: 800px; height: 500px; background: pink;">
 
 	  <div class="title-bar">
-		<img src="/images/me.png" style=" width: 2%;">
+		<img src="/images/me.png" alt="me" style=" width: 2%;">
 		<div class="title-bar-text">Welcome to XaragameIsHere</div>
 		<div class="title-bar-controls">
 		  <button aria-label="Minimize"></button>
@@ -75,8 +75,23 @@
 	<div id="about-window" class="window" style="display: none; position: absolute; top: 2%; left: 2%; width: 800px; height: 500px; background: pink;">
 
 	  <div class="title-bar">
-		<img src="/images/me.png" style=" width: 2%;">
+		<img src="/images/me.png" alt="me" style=" width: 2%;">
 		<div class="title-bar-text">About Me</div>
+			<div class="title-bar-controls">
+			  <button aria-label="Minimize"></button>
+			  <button aria-label="Maximize"></button>
+			  <button onClick="closeAbout()" aria-label="Close"></button>
+			</div>
+		  
+		</div>
+		
+	 </div>
+	  
+	 <div id="portfolio-window" class="window" style="display: block; position: absolute; top: 2%; left: 2%; width: 800px; height: 500px; background: pink;">
+
+	  <div class="title-bar">
+		<img src="/images/me.png" alt="me" style=" width: 2%; alt=me;">
+		<div class="title-bar-text">Xara's Portfolio</div>
 		<div class="title-bar-controls">
 		  <button aria-label="Minimize"></button>
 		  <button aria-label="Maximize"></button>
@@ -85,20 +100,110 @@
 		  
 	  </div>
 		<div class="window-body">
-    		<h2>Hey how are you gorge</h2>
-			  <!--<p class = "main-body-text">I'm Xara Neales Shaw, an </p> <div class="tooltip">aspiring <span class="tooltiptext">Broke as shit, with upper middle class parents</span></div>  -->
-			  <p style = " font-size: 20pt;">
-				Greetings to guys, gals, and those who lie betwixt. It is I, Xaragame. A transfemme, a game dev, a writer, an animator, an absurdist, an individual socialist, an idiot.
-				I do a lot of things. I feel like I suck at a lot of them now, but I get a wee bit better at them every day. And I guess that's just life. Welcome to my website, I like to
-				rant about my opinions, post my work, and recommend media here so if you think that's interesting then add me to your bookmarks.
+    		<div class="window-body">
 
-				<br> <br> Fuck Python, all my homies hate Python, I only fuck with C/C++/C#. 
-     		  </p> 
+			  <menu role="tablist">
+				<li id="Games" class="tab PortfolioGames" role="tab" aria-selected="true"><a href="#tabs">Full Games</a></li>
+				<li id="Demos" class="tab PortfolioGames" role="tab"><a href="#tabs">Demos</a></li>
+				<li id="Maps" class="tab PortfolioGamesNonBrowser" role="tab"><a href="#tabs">Maps</a></li>
+				<li id="Videos" class="tab PortfolioVideo" role="tab"><a href="#tabs">Videos</a></li>
+				<li id="Devlogs/Documentations" class="tab PortfolioWriting" role="tab"><a href="#tabs">Documentations/Devlogs</a></li>
+				<li id="Scripts/Stories" class="tab PortfolioWriting" role="tab"><a href="#tabs">Scripts/Stories</a></li>
+				<li id="mods" class="tab" role="tab"><a href="#tabs">Mods</a></li>
+				<li id="models" class="tab" role="tab"><a href="#tabs">Models</a></li>
+				<li id="Photoshops" class="tab PortfolioImage" role="tab"><a href="#tabs">Photoshops</a></li>
+				<li id="Essays" class="tab PortfolioWriting" role="tab"><a href="#tabs">Essays</a></li>
+			  </menu>
+			  <div class="window" role="tabpanel">
+				<div class="window-body">
+				  <div class="sunken-panel" style="height: 200%; width: 100%;">
+				  <table class="interactive" style="width: 100%;">
+					<thead>
+					  <tr>
+						<th>Name</th>
+						<th>Creation Date&nbsp;</th>
+						<th>Description</th>
+					  </tr>
+					</thead>
+					<tbody id="listOfElements">
+					  
+					</tbody>
+				  </table>
+				</div>
+				
+				</div>
+			  </div>
+			</div>
   		</div>
-		
 	 </div>
+	
    <script>
-	   function openAbout() {
+	   async function getJSON() {
+			return fetch('data/portfolioData.json')
+				.then((response)=>response.json())
+				.then((responseJson)=>{return responseJson});
+		}
+	   
+	   var json;
+	   async function caller() {
+			json = await this.getJSON();  // command waits until completion
+			console.log(json);            // hello is now available
+		   /*
+		   	var result = [];
+				var keys = Object.keys(json);
+				keys.forEach(function(key){
+					result.push(json[key]);
+				});
+				console.log(result)
+	   		*/
+		}
+
+	   	this.caller();
+	   
+	   
+		var tableBody = document.getElementById("listOfElements");
+	   
+	   	var prevElement;
+	   
+	   	document.querySelectorAll('.tab').forEach(element => {
+			if (element.getAttribute("aria-selected") == "true")
+			{
+				prevElement = element
+			}
+			console.log(element)
+			element.addEventListener('click', (event) => {
+				var new_tbody = document.createElement('tbody');
+				tableBody.parentNode.replaceChild(new_tbody, tableBody);
+				tableBody = new_tbody;
+				
+				console.log(element.id);
+				prevElement.setAttribute("aria-selected", "false");
+				element.setAttribute("aria-selected", "true");
+				prevElement = element;
+				for (var data in json[element.id])
+				{
+					var row = tableBody.insertRow(0);
+					
+					row.className = "interactive";
+
+					// Insert new cells (<td> elements) at the 1st and 2nd position of the "new" <tr> element:
+					var cell1 = row.insertCell(0);
+					var cell2 = row.insertCell(1);
+					var cell3 = row.insertCell(2);
+					
+					//cell1.href
+					var thing = element.className.replace("tab ", "");
+					
+					cell1.innerHTML = "<a href= 'Pages/" + thing + ".html'>"+ json[element.id][data]["Name"] +"</a>";
+					cell2.innerHTML = json[element.id][data]["Creation Date"];
+					cell3.innerHTML = json[element.id][data]["Description"];
+					
+				}
+			})
+		  });
+	   
+	   	
+	   	function openAbout() {
 			document.getElementById("about-window").style.display = "block";
 		}
 		function closeAbout() {
