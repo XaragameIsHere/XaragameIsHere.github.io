@@ -156,8 +156,12 @@ quasi aliquam eligendi, placeat qui corporis!</li>
 		  
 	</div>
    <script>
+	   const urlParams = new URLSearchParams(window.location.search);
+	   const mediaType = urlParams.get('mediaType');
+	   
+	   console.log(mediaType);
 	   async function getJSON() {
-			return fetch('./data/portfolioData.json')
+			return fetch('../data/portfolioData.json')
 				.then((response)=>response.json())
 				.then((responseJson)=>{return responseJson});
 		}
