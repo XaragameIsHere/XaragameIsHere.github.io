@@ -194,7 +194,7 @@
 					//cell1.href
 					var thing = element.className.replace("tab ", "");
 					
-					cell1.innerHTML = "<a href= 'Pages/" + thing + ".html'>"+ json[element.id][data]["Name"] +"</a>";
+					cell1.innerHTML = "<a href= 'Pages/" + thing + ".html?MediaTypee='"+ element.id +"&dataIndex=" + data +">"+ json[element.id][data]["Name"] +"</a>";
 					cell2.innerHTML = json[element.id][data]["Creation Date"];
 					cell3.innerHTML = json[element.id][data]["Description"];
 					
