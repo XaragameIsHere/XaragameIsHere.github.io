@@ -48,10 +48,10 @@
 			  <p class="light" style="display: inline; font-family: HelveticaNeue; font-size: 20pt;">Site Highlights</p>
 			</div>
 			<div class="listbox" style="border-left: 5px solid #d52d00;">
-			  <p class="boxtext"> <button onClick="openAbout()">About Me</button> </p>
+			  <p class="boxtext"> <button onClick="openAbout('about-window')">About Me</button> </p>
 			</div>
 			<div class="listbox" style="border-left: 5px solid #ef7528;">
-			  <p class="boxtext"> <button>Portfolio</button> </p>
+			  <p class="boxtext"> <button onClick="openAbout('portfolio-window')">Portfolio</button> </p>
 			</div>
 			<div class="listbox" style="border-left: 5px solid #ff9b57;">
 			  <p class="boxtext"> <button>Blog</button> </p>
@@ -80,14 +80,14 @@
 			<div class="title-bar-controls">
 			  <button aria-label="Minimize"></button>
 			  <button aria-label="Maximize"></button>
-			  <button onClick="closeAbout()" aria-label="Close"></button>
+			  <button onClick="closeAbout('about-window')" aria-label="Close"></button>
 			</div>
 		  
 		</div>
 		
 	 </div>
 	  
-	 <div id="portfolio-window" class="window" style="display: block; position: absolute; top: 2%; left: 2%; width: 800px; height: 500px; background: pink;">
+	 <div id="portfolio-window" class="window" style="display: none; position: absolute; top: 2%; left: 2%; width: 800px; height: 500px; background: pink;">
 
 	  <div class="title-bar">
 		<img src="/images/me.png" alt="me" style=" width: 2%; alt=me;">
@@ -95,7 +95,7 @@
 		<div class="title-bar-controls">
 		  <button aria-label="Minimize"></button>
 		  <button aria-label="Maximize"></button>
-		  <button onClick="closeAbout()" aria-label="Close"></button>
+		  <button onClick="closeAbout('portfolio-window')" aria-label="Close"></button>
 		</div>
 		  
 	  </div>
@@ -203,11 +203,11 @@
 		  });
 	   
 	   	
-	   	function openAbout() {
-			document.getElementById("about-window").style.display = "block";
+	   	function openAbout(elementToClose) {
+			document.getElementById(elementToClose).style.display = "block";
 		}
-		function closeAbout() {
-			document.getElementById("about-window").style.display = "none";
+		function closeAbout(elementToClose) {
+			document.getElementById(elementToClose).style.display = "none";
 		}
 	</script>
 
