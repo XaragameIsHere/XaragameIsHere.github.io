@@ -4,7 +4,7 @@
 
 body {
   
-  background-image: url("images/viewOfCapri.jpg");
+  background-image: url("../images/viewOfCapri.jpg");
   background-repeat: no-repeat;
   background-attachment: fixed; 
   background-size: 100% 100%;
@@ -22,12 +22,12 @@ body {
 
 @font-face {
   font-family: "Windows98 Font";
-  src: url("fonts/Windows Regular.ttf")
+  src: url("../fonts/Windows Regular.ttf")
 }
 
 @font-face {
   font-family: "HelveticaNeue";
-  src: url("fonts/HelveticaNeue.ttf")
+  src: url("../fonts/HelveticaNeue.ttf")
 }
 
 #Scroll_Group_1 {
