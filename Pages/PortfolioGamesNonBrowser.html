@@ -151,13 +151,14 @@ totam ratione voluptas quod exercitationem fuga. Possimus quis earum veniam
 quasi aliquam eligendi, placeat qui corporis!</li>
 </ul>
 		  
-		  <img src="/images/me.png" alt="screenShots" style=" width: 55%; height: 70%; display: block; position: absolute; top: 8%; left: 40%; border-style: inset; border-width: 5px;">
-		  <button style=" width: 30%; height: 10%; display: block; position: absolute; bottom: 8%; left: 50%; font-family: HelveticaNeue; font-size: 200%;">Play on Steam</button>
+		  <img src="../images/me.png" alt="screenShots" style=" width: 55%; height: 70%; display: block; position: absolute; top: 8%; left: 40%; border-style: inset; border-width: 5px;">
+		  <button id = "ActionButton" style=" width: 30%; height: 10%; display: block; position: absolute; bottom: 8%; left: 50%; font-family: HelveticaNeue; font-size: 200%;">Play on Steam</button>
 		  
 	</div>
    <script>
 	   const urlParams = new URLSearchParams(window.location.search);
 	   const mediaType = urlParams.get('mediaType');
+	   const index = urlParams.get('dataIndex');
 	   
 	   console.log(mediaType);
 	   async function getJSON() {
@@ -182,8 +183,10 @@ quasi aliquam eligendi, placeat qui corporis!</li>
 
 	   	this.caller();
 	   
-	   
-	   	
+	   	document.getElementById("ActionButton").addEventListener('click', (event) => {
+				console.log(json[mediaType][index]["link"]);
+				window.location=json[mediaType][index]["link"];
+			})
 	   
 	   	
 	   	function openAbout() {
