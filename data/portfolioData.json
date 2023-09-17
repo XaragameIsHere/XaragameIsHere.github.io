@@ -109,30 +109,31 @@
     ],
     "Devlogs/Documentations":
     [
+		{
+        "Name": "Black Creek Avenue: A Complete Beginner’s Guide to Hammer Mapping",
+        "Creation Date": "June 10th 2023",
+        "Description": "A devlog for the creation of my Garry's Mod map, gm_black_creek_ave",
+        "link": "https://docs.google.com/document/d/e/2PACX-1vS5JbV5ng_LWtro63ApAezrgp8zn9vD78vJb0fawK7GlvNSKv9i4e6t8qZHgfj84mjsrpMC9QYy2Pex/pub?embedded=true"
+      },
       {
         "Name": "Basket Software Game Design Documentations",
         "Creation Date": "March 20th 2022",
         "Description": "Documentations I made for unfinished Roblox games in my failed Roblox studio",
-        "link": "https://docs.google.com/document/d/1zy-zZBPppl00Ig9NtJk5nEyOuztZSBRT6qDtn88hG38/edit?usp=sharing"
+        "link": "https://docs.google.com/document/d/e/2PACX-1vRCDl6L6-4GojeO_03j5IuidQBjBrYNzjHl3CqcTqCQyuNnxkMk5ZXrOJLP_PWKJsECLXyaywECBGVa/pub?embedded=true"
       },
       {
         "Name": "Basket Cinematica User Documentation",
         "Creation Date": "March 10th 2022",
         "Description": "Documentation of how to use the cutscene editor I made in roblox",
-        "link": "https://docs.google.com/document/d/1NukTkB1GVPyHbgHAP4Q8yRRE9oJtKRNd5_WfTLoVMXU/edit?usp=sharing"
+        "link": "https://docs.google.com/document/d/e/2PACX-1vQ1TgeJFwu_SX6EGgmIF-UOipvr3QzTobWPjD9xhlO87vqhdGr-72SsH5zSZ5xO2N_er1xjWen5Qw4j/pub?embedded=true"
       },
       {
         "Name": "Comic Destruction",
         "Creation Date": "May 10th 2023",
         "Description": "Concept for a game I was thinking about making for my game design club",
-        "link": "https://docs.google.com/document/d/1XZcCgw7_aoeuu0SPC8w1vNsdtQNuzfc5TsY0KYScI3E/edit?usp=sharing"
-      },
-      {
-        "Name": "Black Creek Avenue: A Complete Beginner’s Guide to Hammer Mapping",
-        "Creation Date": "June 10th 2023",
-        "Description": "A devlog for the creation of my Garry's Mod map, gm_black_creek_ave",
-        "link": "https://docs.google.com/document/d/1yOh2vkPqUrN3AZj4eDdxqhiIS7sm9gmxsMfg5z-yORM/edit?usp=sharing"
+        "link": "https://docs.google.com/document/d/e/2PACX-1vTv3ic3uyLmXSvCtL_FF_TImUvPFXh81g3aQ43eiXl-Ae5wsZxKWHHk1OSRPeJz-6szeWw2qe6qj7Xr/pub?embedded=true"
       }
+      
       
     ],
     "Scripts/Stories":
