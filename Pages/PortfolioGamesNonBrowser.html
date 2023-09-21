@@ -94,7 +94,7 @@
 
 	  <div class="title-bar">
 		<img src="../images/me.png" alt="me" style=" width: 2%; alt=me;">
-		<div class="title-bar-text">Example Item</div>
+		<div id="titleBar" class="title-bar-text">Example Item</div>
 		<div class="title-bar-controls">
 		  <button aria-label="Minimize"></button>
 		  <button aria-label="Maximize"></button>
@@ -162,6 +162,7 @@ quasi aliquam eligendi, placeat qui corporis!</li>
 	   	document.getElementById("ActionButton").addEventListener('click', (event) => {
 				console.log(json[mediaType][index]["link"]);
 				window.location=json[mediaType][index]["link"];
+				document.getElementById("titleBar").innerHTML = json[mediaType][index]["Name"];
 			})
 	   
 	   	

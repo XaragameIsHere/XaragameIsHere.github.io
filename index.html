@@ -24,7 +24,7 @@
 		<button onclick="window.location.href='mailto:xaragamens30@gmail.com';" style="width: 5%; font-size: 2vw;"><img src="images/Mail.png" style=" width: 50%;" alt="Email"></button>
 	  </div>  
 	 </div>
-	<div class="window" style="position: absolute;  width: 800px; height: 500px; background: pink;">
+	<div class="window" style="position: absolute;  width: 60%; height: 80%; background: pink; max-height: 500px; max-width: 800px;">
 
 	  <div class="title-bar">
 		<img src="/images/me.png" alt="me" style=" width: 2%;">
@@ -57,7 +57,7 @@
 			  <p class="boxtext"> <button>Blog</button> </p>
 			</div>
 			<div class="listbox" style="border-left: 5px solid #ffffff;">
-			  <p class="boxtext"> <button >Media Recommendations</button></p>
+			  <p class="boxtext"> <button onClick="openAbout('recommendations-window')">Media Recommendations</button></p>
 			</div>
 			<div class="listbox" style="border-left: 5px solid #d160a7;">
 			  <p class="boxtext"> <button >Life Updates</button></p>
@@ -86,8 +86,37 @@
 		</div>
 		
 	 </div>
+	  <div id="recommendations-window" class="window" style="display: none; position: absolute; top: 2%; left: 2%; width: 60%; height: 80%; background: pink;">
+
+	  <div class="title-bar">
+		<img src="/images/me.png" alt="me" style=" width: 2%;">
+		<div class="title-bar-text">Media Recommendations</div>
+			<div class="title-bar-controls">
+			  <button aria-label="Minimize"></button>
+			  <button aria-label="Maximize"></button>
+			  <button onClick="closeAbout('recommendations-window')" aria-label="Close"></button>
+			</div>
+		  
+		</div>
+		  
+		  <div style="display: inline-block; height:90%;width:30%; background: white; border:3px solid #ccc;overflow:auto;">
+			<button style="width: 100%; font-size: 2vw; font-family: HelveticaNeue; " ><img src="images/winbows.png" alt="start" style=" width: 17%;">Games</button>
+			<button style="width: 100%; font-size: 2vw; font-family: HelveticaNeue; " ><img src="images/winbows.png" alt="start" style=" width: 17%;">Youtubers</button>
+			<button style="width: 100%; font-size: 2vw; font-family: HelveticaNeue; " ><img src="images/winbows.png" alt="start" style=" width: 17%;">Movies</button>
+			<button style="width: 100%; font-size: 2vw; font-family: HelveticaNeue; " ><img src="images/winbows.png" alt="start" style=" width: 17%;">Television</button>
+			<button style="width: 100%; font-size: 2vw; font-family: HelveticaNeue; " ><img src="images/winbows.png" alt="start" style=" width: 17%;">Youtubers</button>
+			<button style="width: 100%; font-size: 2vw; font-family: HelveticaNeue; " ><img src="images/winbows.png" alt="start" style=" width: 17%;">Books</button>
+			
+		</div>
+		  
+		
+		  <div style="display: inline-block; height:90%;width:30%; background: white; border:3px solid #ccc;overflow:auto;">
+			</div>
+		  <div style="display: inline-block; height:90%;width:30%; background: white; border:3px solid #ccc;overflow:auto;">
+			</div>
+	 </div>
 	  
-	 <div id="portfolio-window" class="window" style="display: none; position: absolute; top: 2%; left: 2%; width: 800px; height: 500px; background: pink;">
+	 <div id="portfolio-window" class="window" style="display: none; position: absolute; top: 2%; left: 2%; width: 60%; height: 80%; background: pink;">
 
 	  <div class="title-bar">
 		<img src="/images/me.png" alt="me" style=" width: 2%; alt=me;">
@@ -99,6 +128,8 @@
 		</div>
 		  
 	  </div>
+		 
+	
 		<div class="window-body">
     		<div class="window-body">
 
