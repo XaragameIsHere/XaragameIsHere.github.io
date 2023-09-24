@@ -1,17 +1,19 @@
 {
-    "Games":
+    "Browser-Games":
     [
       {
         "Name": "Battle of the Heart",
         "Creation Date": "August 4th 2023",
         "Description": "A Student Bullet Hell/Dating Sim Game I made in USC's Foundations in game design class",
-        "link": ""
+        "player-link": "https://itch.io/embed-upload/8441734?color=333333",
+		"button-link": "https://itch.io/embed/2174206?border_width=3"
       },
       {
         "Name": "Dino Game Twist",
         "Creation Date": "November 12th 2022",
         "Description": "The Classic browser game, with a 3D twist and a few new mechanics. Made for fun by me",
-        "link": ""
+        "player-link": "https://itch.io/embed-upload/6124694?color=333333",
+		"button-link": "https://itch.io/embed/1609804?border_width=3"
       }
     ],
     "Demos":
@@ -20,13 +22,15 @@
         "Name": "Better Kill Saul",
         "Creation Date": "March 27th 2023",
         "Description": "An FPS Movement Shooter demo with better call saul characters as enemies.",
-        "link": ""
+        "player-link": "https://itch.io/embed-upload/7592240?color=333333",
+		"button-link": "https://itch.io/embed/1988442?border_width=3"
       },
       {
         "Name": "The Rug Defender",
         "Creation Date": "November 12th 2022",
         "Description": "The Classic browser game, with a 3D twist and a few new mechanics. Made for fun by me",
-        "link": ""
+        "player-link": "https://itch.io/embed-upload/7371812?color=333333",
+		"button-link": "https://itch.io/embed/1931726?border_width=3"
       }
     ],
     "Maps":

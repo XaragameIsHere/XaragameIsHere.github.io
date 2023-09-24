@@ -25,7 +25,7 @@
 		<button onclick="window.location.href='mailto:xaragamens30@gmail.com';" style="width: 5%; font-size: 2vw;"><img src="../images/Mail.png" style=" width: 50%;" alt="Email"></button>
 	  </div>  
 	 </div>
-	<div class="window" style="position: absolute;  width: 800px; height: 500px; background: pink;">
+	<div class="window" style="position: absolute;  width: 60%; height: 80%; background: pink; max-height: 500px; max-width: 800px;">
 
 	  <div class="title-bar inactive">
 		<img src="../images/me.png" alt="me" style=" width: 2%;">
@@ -99,7 +99,7 @@
 		
 	 </div>
 	  
-	 <div id="portfolio-window" class="window" style="display: block; position: absolute; top: 2%; left: 2%; width: 800px; height: 500px; background: pink;">
+	 <div id="portfolio-window" class="window" style="display: block; position: absolute; top: 2%; left: 2%; width: 60%; height: 80%; background: pink; max-height: 500px; max-width: 800px;">
 
 	  <div class="title-bar inactive">
 		<img src="../images/me.png" alt="me" style=" width: 2%; alt=me;">
@@ -114,7 +114,7 @@
 	 </div>
 	</div>
 	  
-	  <div id="main" class="window" style="display: block; position: absolute; top: 4%; left: 4%; width: 800px; height: 500px; background: pink;">
+	  <div id="main" class="window" style="display: block; position: absolute; top: 4%; left: 4%; width: 60%; height: 80%; background: pink; max-height: 500px; max-width: 800px;">
 
 	  <div class="title-bar">
 		<img src="../images/me.png" alt="me" style=" width: 2%; alt=me;">
@@ -122,12 +122,16 @@
 		<div class="title-bar-controls">
 		  <button aria-label="Minimize"></button>
 		  <button aria-label="Maximize"></button>
-		  <button aria-label="Close"></button>
+			<a href="../index.html"><button aria-label="Close"></button></a>
 		</div>
 		  
 	  
 	 	</div>
-		  <ul class="tree-view" style="display: block; top: 10%; left: 4%; width: 35%; height: 90%">
+		  
+		  
+		  <iframe id="player-window" style="position: absolute; display: inline-flex;" frameborder="0" src="https://itch.io/embed-upload/8441734?color=333333" allowfullscreen="" width="78%" height="75%"><a id="player-link" href="https://xaragame.itch.io/battle-of-the-heart">Play Battle of the Heart on itch.io</a></iframe>
+		  <iframe id="button-window" style="position: absolute; display: inline-flex; bottom: 0%" frameborder="0" src="https://itch.io/embed/2174206?border_width=3" width="78%" height="20%"><a id="button-link" href="https://xaragame.itch.io/battle-of-the-heart">Battle of the Heart by Xaragame</a></iframe>
+		  <ul class="tree-view" style="position: absolute; right: 0%; display: inline-flex; width: 20%; height: 92%; font-size: 100%">
 		  <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia,
 molestiae quas vel sint commodi repudiandae consequuntur voluptatum laborum
 numquam blanditiis harum quisquam eius sed odit fugiat iusto fuga praesentium
@@ -139,25 +143,13 @@ quia. Quo neque error repudiandae fuga? Ipsa laudantium molestias eos
 sapiente officiis modi at sunt excepturi expedita sint? Sed quibusdam
 recusandae alias error harum maxime adipisci amet laborum. Perspiciatis 
 minima nesciunt dolorem! Officiis iure rerum voluptates a cumque velit 
-quibusdam sed amet tempora. Sit laborum ab, eius fugit doloribus tenetur 
-fugiat, temporibus enim commodi iusto libero magni deleniti quod quam 
-consequuntur! Commodi minima excepturi repudiandae velit hic maxime
-doloremque. Quaerat provident commodi consectetur veniam similique ad 
-earum omnis ipsum saepe, voluptas, hic voluptates pariatur est explicabo 
-fugiat, dolorum eligendi quam cupiditate excepturi mollitia maiores labore 
-suscipit quas? Nulla, placeat. Voluptatem quaerat non architecto ab laudantium
-modi minima sunt esse temporibus sint culpa, recusandae aliquam numquam 
-totam ratione voluptas quod exercitationem fuga. Possimus quis earum veniam 
-quasi aliquam eligendi, placeat qui corporis!</li>
+quibusdam sed amet tempora. </li>
 </ul>
-		  
-		  <!--<img src="/images/me.png" alt="screenShots" style=" width: 55%; height: 70%; display: block; position: absolute; top: 8%; left: 40%; border-style: inset; border-width: 5px;">-->
-		  <button style=" width: 30%; height: 10%; display: block; position: absolute; bottom: 8%; left: 50%; font-family: HelveticaNeue; font-size: 200%;">Play on Steam</button>
-		  
 	</div>
    <script>
 	   const urlParams = new URLSearchParams(window.location.search);
 	   const mediaType = urlParams.get('mediaType');
+	   const index = urlParams.get('dataIndex');
 	   
 	   console.log(mediaType);
 	   async function getJSON() {
@@ -166,25 +158,21 @@ quasi aliquam eligendi, placeat qui corporis!</li>
 				.then((responseJson)=>{return responseJson});
 		}
 	   
+	   
 	   var json;
 	   async function caller() {
 			json = await this.getJSON();  // command waits until completion
 			console.log(json);            // hello is now available
-		   /*
-		   	var result = [];
-				var keys = Object.keys(json);
-				keys.forEach(function(key){
-					result.push(json[key]);
-				});
-				console.log(result)
-	   		*/
+		   
+	   
+			console.log(json[mediaType][index]["link"]);
+			document.getElementById("player-window").src = json[mediaType][index]["player-link"];
+		   document.getElementById("button-window").src = json[mediaType][index]["button-link"];
+		   
 		}
 
-	   	this.caller();
-	   
-	   
 	   	
-	   
+	   this.caller();
 	   	
 	   	function openAbout() {
 			document.getElementById("about-window").style.display = "block";
