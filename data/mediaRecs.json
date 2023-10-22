@@ -1,0 +1,137 @@
+{
+    "Games":
+    [
+      {
+        "Name": "Half Life",
+        "Rating": 90,
+		"Year": 1998,
+        "Review": "A Student Bullet Hell/Dating Sim Game I made in USC's Foundations in game design class",
+        "icon": "https://upload.wikimedia.org/wikipedia/en/thumb/f/fa/Half-Life_Cover_Art.jpg/220px-Half-Life_Cover_Art.jpg",
+		"tags": 
+		[
+			{
+				1: "FPS",
+				2: "Valve",
+				3: "PC",
+				4: "3D",
+				5: "Modding",
+				6: "Sci Fi",
+				7: "Horror"
+			}
+		]
+      },
+      
+    ],
+    "Youtubers":
+    [
+      {
+        "Name": "Contrapoints",
+        "Description": "A trans video essayist ",
+        "icon": "https://yt3.googleusercontent.com/B3TFzvwt8Abuk3xweJvBLcL5Xt3Y7TatvDyWDtsEoR3A4oZkTA4ajbz_yRo2QF70WYDpb9k=s900-c-k-c0x00ffffff-no-rj",
+		"tags":
+		[
+			{
+				1: "Gay",
+				2: "Video Essay",
+				3: "Breadtube",
+				4: "Costumes",
+				5: "Trans",
+				6: "Feminism"
+			}
+		],
+		"Videos":
+		[
+			{
+				"The Hunger": 
+				[
+					{
+						"link": "https://www.youtube.com/watch?v=RTRT794IQBg",
+						"Rating": 92
+					}
+				],
+				"Envy":
+				[
+					{
+						"link": "https://www.youtube.com/watch?v=aPhrTOg1RUk&t",
+						"Rating": 95
+					}
+				],
+				
+				"Cringe":
+				[
+					{
+						"link": "https://www.youtube.com/watch?v=vRBsaJPkt2Q",
+						"Rating": 90
+					}
+				],
+				"'Are Traps Gay?'": 
+				[
+					{
+						"link": "https://www.youtube.com/watch?v=PbBzhqJK3bg",
+						"Rating": 89
+					}
+				],
+				"Incels":
+				[
+					{
+						"link": "https://www.youtube.com/watch?v=fD2briZ6fB0&t",
+						"Rating": 85
+					}
+				], 
+			}
+		]
+      },
+      
+    ],
+    "Movies":
+    [
+      {
+        "Name": "Parasite",
+        "Year": "2019",
+        "Review": "Crazy thriller about a bunch of working class people taking over a rich persons house and then murder",
+        "rating": 98,
+		"Where":
+		[
+			{
+				"Max": "https://www.max.com/movies/d5e3be11-eb8b-449f-89cf-db887ddee777",
+				"Hulu": "https://www.hulu.com/watch/2fd691a0-f66b-467f-8635-00d7f151f3d4",
+				"Youtube": "http://www.youtube.com/watch?v=31oEbmiNkSg"
+			}
+		]
+		  
+      }
+    ],
+    "Television":
+    [
+      {
+        "Name": "The Simpsons",
+        "Year": "1",
+        "Review": "Crazy thriller about a bunch of working class people taking over a rich persons house and then murder",
+        "rating": 98,
+		"Where":
+		[
+			{
+				"Max": "https://www.max.com/movies/d5e3be11-eb8b-449f-89cf-db887ddee777",
+				"Hulu": "https://www.hulu.com/watch/2fd691a0-f66b-467f-8635-00d7f151f3d4",
+				"Youtube": "http://www.youtube.com/watch?v=31oEbmiNkSg"
+			}
+		]
+      },
+      
+    ],
+    "Books":
+    [
+		{
+        "Name": "Black Creek Avenue: A Complete Beginner’s Guide to Hammer Mapping",
+        "Creation Date": "June 10th 2023",
+        "Description": "A devlog for the creation of my Garry's Mod map, gm_black_creek_ave",
+        "link": "https://docs.google.com/document/d/e/2PACX-1vS5JbV5ng_LWtro63ApAezrgp8zn9vD78vJb0fawK7GlvNSKv9i4e6t8qZHgfj84mjsrpMC9QYy2Pex/pub?embedded=true"
+      },
+      
+      
+      
+    ],
+    
+    
+  }
+  
