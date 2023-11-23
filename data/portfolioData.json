@@ -13,7 +13,8 @@
         "Creation Date": "November 12th 2022",
         "Description": "The Classic browser game, with a 3D twist and a few new mechanics. Made for fun by me",
         "player-link": "https://itch.io/embed-upload/6124694?color=333333",
-		"button-link": "https://itch.io/embed/1609804?border_width=3"
+		"button-link": "https://itch.io/embed/1609804?border_width=3",
+		"Commentary": "Dino Game Twist is a game that rose from the ashes of another. If you read my project question essay you’ll know of the disastrous attempted game, SuperPortalGunPlus. In short, it wasn’t a success and eventually I moved on to another project. That project was Dino Game Twist. My very first game on Unity. It’s pretty simple, it’s Dino Game… but with a few twists. Like literally you have to twist the camera to keep moving. Essentially you jump over obstacles like cacti from the original game but also dodge meteors and once again turn the camera. Like I said, it’s very simple, the goal is just to get the highest score. I spent most of July and August working on this project and it came out pretty nicely. I shared it with some friends and ultimately I got the highest score because I’m the greatest at this game I made up. Although it came out nice, I tried doing a lot more with it. At one point I think I added special meteors that led to portals that led to a 3D Super Mario like boss battle where you fought against various weird things from the internet like your ISP or a crypto bro. But I never got to finish it as school started up and subsequently took up most of my time. I have recently wanted to go back and finish it but unfortunately after accidentally bricking my PC a few months ago and having to reinstall windows I lost the source code after forgetting to back it up. And since it’s a WebGL game it can’t be decompiled so if I ever go back I’ll have to work from scratch"
       }
     ],
     "Demos":
@@ -23,14 +24,16 @@
         "Creation Date": "March 27th 2023",
         "Description": "An FPS Movement Shooter demo with better call saul characters as enemies.",
         "player-link": "https://itch.io/embed-upload/7592240?color=333333",
-		"button-link": "https://itch.io/embed/1988442?border_width=3"
+		"button-link": "https://itch.io/embed/1988442?border_width=3",
+		"Commentary": "I…Really don’t have a good explanation for the existence of this. I guess I just got bored and wanted to mess around with Unity’s pathfinding as a fun weekend project. I can’t really remember exactly why or how I made this other than it just being a fun joke. The only fun fact I have about it is that I remember I made it whilst watching the matrix. Honestly, despite the heavily stupid concept I actually had a lot of fun playing it. "
       },
       {
         "Name": "The Rug Defender",
         "Creation Date": "November 12th 2022",
         "Description": "The Classic browser game, with a 3D twist and a few new mechanics. Made for fun by me",
         "player-link": "https://itch.io/embed-upload/7371812?color=333333",
-		"button-link": "https://itch.io/embed/1931726?border_width=3"
+		"button-link": "https://itch.io/embed/1931726?border_width=3",
+		"Commentary": "This one I can say quite a bit about despite it lacking so much substance. It was originally a demo I made to conceptualize something they were trying to do on the programming side of my robotics team. Then I realized that was really useless but the thing I made could be reworked into a fun thing for a game. So I looked for a game jam happening that weekend to find one that I could use it on. I found one where you had to incorporate this youtuber’s cat into it. The concept was essentially going to be a topdown bullet hell shooter where you’ve been shrunk down to the size of a bug and you have to take control of this roomba to “save” the cat from rodents by killing all the rodents. Until you find out that the rodents are harmless and the cat is just genocidal. I got a few friends together from a previous project but unfortunately nothing came of it due to me being too busy from schoolwork and whatnot. So now all I have is this demo to show for it, honestly I think one day before I graduate college I’ll probably finish it. I think it could have been really fun. Oh also you need a controller for this"
       }
     ],
     "Maps":
