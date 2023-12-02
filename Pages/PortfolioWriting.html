@@ -103,10 +103,35 @@
 		  
 	  
 	 	</div>
-	    <ul class="tree-view" style="display: block; top: 25%; left: 25%; width: 90%; height: 90%; font-size: 100%">
+	    <ul class="tree-view" style="display: block; top: 25%; left: 25%; width: 70%; height: 90%; font-size: 100%">
 		  <iframe id="reader" src="https://docs.google.com/document/d/e/2PACX-1vS5JbV5ng_LWtro63ApAezrgp8zn9vD78vJb0fawK7GlvNSKv9i4e6t8qZHgfj84mjsrpMC9QYy2Pex/pub?embedded=true" style="display: block; width: 100%; height: 100%; font-size: 100%"></iframe>
 		</ul>
-
+		<h1 class="gradient-text" style="position: absolute; text-align: center; font-size: 150%; width: 30%; top: 5%; right: 0%; color: ">Xara's Commentary</h1>
+		  <ul class="tree-view" style="position: absolute; overflow-y: auto; overflow-x: hidden; bottom: 5%; right: 1%; display: inline-flex; width: 25%; height: 80%; font-size: 150%">
+		  <li id="commentaryBox">Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia,
+molestiae quas vel sint commodi repudiandae consequuntur voluptatum laborum
+numquam blanditiis harum quisquam eius sed odit fugiat iusto fuga praesentium
+optio, eaque rerum! Provident similique accusantium nemo autem. Veritatis
+obcaecati tenetur iure eius earum ut molestias architecto voluptate aliquam
+nihil, eveniet aliquid culpa officia aut! Impedit sit sunt quaerat, odit,
+tenetur error, harum nesciunt ipsum debitis quas aliquid. Reprehenderit,
+quia. Quo neque error repudiandae fuga? Ipsa laudantium molestias eos 
+sapiente officiis modi at sunt excepturi expedita sint? Sed quibusdam
+recusandae alias error harum maxime adipisci amet laborum. Perspiciatis 
+minima nesciunt dolorem! Officiis iure rerum voluptates a cumque velit 
+quibusdam sed amet tempora.Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia,
+molestiae quas vel sint commodi repudiandae consequuntur voluptatum laborum
+numquam blanditiis harum quisquam eius sed odit fugiat iusto fuga praesentium
+optio, eaque rerum! Provident similique accusantium nemo autem. Veritatis
+obcaecati tenetur iure eius earum ut molestias architecto voluptate aliquam
+nihil, eveniet aliquid culpa officia aut! Impedit sit sunt quaerat, odit,
+tenetur error, harum nesciunt ipsum debitis quas aliquid. Reprehenderit,
+quia. Quo neque error repudiandae fuga? Ipsa laudantium molestias eos 
+sapiente officiis modi at sunt excepturi expedita sint? Sed quibusdam
+recusandae alias error harum maxime adipisci amet laborum. Perspiciatis 
+minima nesciunt dolorem! Officiis iure rerum voluptates a cumque velit 
+quibusdam sed amet tempora. </li>
+</ul>
 		  
 	</div>
    <script>
@@ -131,6 +156,7 @@
 			console.log(json[mediaType][index]["link"]);
 			document.getElementById("reader").src = json[mediaType][index]["link"];
 		   document.getElementById("titleBar").innerHTML = json[mediaType][index]["Name"];
+		   document.getElementById("commentaryBox").innerHTML = json[mediaType][index]["Commentary"];
 		}
 
 	   	
