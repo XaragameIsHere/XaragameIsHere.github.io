@@ -70,6 +70,18 @@
 			</div>
 		  
 		</div>
+		<h1 class="gradient-text" style="position: absolute; text-align: center; font-size: 150%; width: 30%; top: 45%; right: 0%; color: ">Xara's Selected Works</h1>
+		<p>&nbsp;</p>
+<ul id="showcaseBox" class="tree-view" style="position: absolute; overflow-y: hidden; overflow-x: auto; bottom: 1.5%; right: 1.5%; display: inline-flex; width: 50%; height: 45%; font-size: 150%">
+    <template id="Showcase">
+			<div style=" display: inline-flex; min-width: 300px; width: 50%; height: 100%; font-size: 150%">
+			<img id="icon" src="images/youboob.png" style=" width: 100%;" alt="Youtube" href="https://www.youtube.com/@XaragameIsHere">
+			  <a id="button"><p class="boxtext" style="position: relative; bottom: -75%; right: 20%;"> <button id ="text">Blog</button> </p></a>
+			</div>
+		</template>
+			
+			
+		</ul>
 	</div>
 	  
 	<div id="about-window" class="window" style="display: none; position: absolute; top: 2%; left: 2%; width: 60%; height: 80%; max-height: 500px; max-width: 800px; background: pink; ">
@@ -214,7 +226,7 @@
 	 </div>
 	
    <script>
-	   
+	   console.log("Bitch");
 	   
 	   async function getJSON() {
 			return fetch('data/portfolioData.json')
@@ -244,6 +256,8 @@
 	   
 	   	var prevElement;
 	   function loadCells(element){
+		   const showcaseBox = document.querySelector("#showcaseBox");
+		   const template = document.querySelector("#Showcase");
 		   var new_tbody = document.createElement('tbody');
 			tableBody.parentNode.replaceChild(new_tbody, tableBody);
 			tableBody = new_tbody;
@@ -252,6 +266,9 @@
 			prevElement.setAttribute("aria-selected", "false");
 			element.setAttribute("aria-selected", "true");
 			prevElement = element;
+		   console.log(template);
+		   console.log(showcaseBox);
+		   
 		   
 		   for (var data in json[element.id])
 				{
@@ -272,6 +289,20 @@
 					cell3.innerHTML = json[element.id][data]["Description"];
 					
 				}
+		   
+		   for (var data in json["Highlights"])
+		   {
+			   const clone = template.content.cloneNode(true);
+				var icon = clone.querySelector("#icon");
+				var text = clone.querySelector("#text");
+			   	var button = clone.querySelector("#button");
+			   
+			   icon.src = json["Highlights"][data]["Image"];
+			   icon.alt = json["Highlights"][data]["Name"];
+			   button.href = json["Highlights"][data]["Link"]
+			   text.innerHTML = json["Highlights"][data]["Name"];
+			   showcaseBox.appendChild(clone);
+		   }
 	   }
 	   	
 	   
