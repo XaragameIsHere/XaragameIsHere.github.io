@@ -43,6 +43,7 @@
         "Name": "gm_black_creek_ave",
         "Creation Date": "April 30th 2023",
         "Description": "A Garry's Mod map rendention of my own neighborhood",
+		"Platform": "Steam",
         "link": "https://steamcommunity.com/sharedfiles/filedetails/?id=2983779001",
 		"Commentary-Type": "google-docs",
 		"Commentary": "https://docs.google.com/document/d/e/2PACX-1vS5JbV5ng_LWtro63ApAezrgp8zn9vD78vJb0fawK7GlvNSKv9i4e6t8qZHgfj84mjsrpMC9QYy2Pex/pub?embedded=true",
@@ -251,13 +252,42 @@
     [
       {
         "Name": "ralphJob",
-        "Creation Date": "Feburary 12th 2023",
-        "Platform": "Roblox",
-        "Description": "My job was to create a first person movement system, and I created a first person movement system. It was made for a commission for the currently unreleased Roblox game, “Bark”. Idk, I like this work as it’s the only one that’ll probably end up in an actual game. But at the same time it’s kinda simple. It comes packed with a crouch (hold c or or right thumbstick), Sprint (shift or left thumbstick), slide (shift + c or left thumbstick + right thumbstick), jumping (Space or A). Also comes with console and mobile support. The system uses renderstepped to update the orientation of the player based on the camera direction on every frame rendered. I also use renderstepped to do head bobbing effect by making a procedural camera bobbing animation. The sprint, jump, and crouch abilities on the other hand are functions that lower the camera and change the run speed and FOV.",
-		"Preview-Type": "googleDrive",
-        "link": "https://docs.google.com/document/d/e/2PACX-1vR_cpFUJtDOt8Xw9EuepEmb1E-3Iv5Pyqqj-n0q1uLV9sxFbAOo3_fUb-focbzTnuf_zx9omfbqMZjP/pub?embedded=true"
+        "Creation Date": "November 15th 2023",
+        "Description": "Roblox first person movement system",
+		"Platform": "Roblox",
+        "link": "https://www.roblox.com/games/15321484378/ralphJob",
+		"Commentary-Type": "standard",
+		"Commentary": "My job was to create a first person movement system, and I created a first person movement system. It was made for a commission for the currently unreleased Roblox game, “Bark”. Idk, I like this work as it’s the only one that’ll probably end up in an actual game. But at the same time it’s kinda simple. It comes packed with a crouch (hold c or or right thumbstick), Sprint (shift or left thumbstick), slide (shift + c or left thumbstick + right thumbstick), jumping (Space or A). Also comes with console and mobile support. The system uses renderstepped to update the orientation of the player based on the camera direction on every frame rendered. I also use renderstepped to do head bobbing effect by making a procedural camera bobbing animation. The sprint, jump, and crouch abilities on the other hand are functions that lower the camera and change the run speed and FOV.",
+		"Previews": 
+		[
+			{
+				"Link": "https://drive.google.com/file/d/1IfW4MsgcTASJ6fjAqPGsnsS1QVEbksuY/preview",
+				"Type": "video"
+			}
+			
+				
+			
+		]
+      },
+      {
+        "Name": "npcs",
+        "Creation Date": "December 23rd 2023",
+        "Description": "Roblox mass npc system",
+		"Platform": "Roblox",
+        "link": "https://www.roblox.com/games/11905364626/Npcs",
+		"Commentary-Type": "standard",
+		"Commentary": "I really liked my work on this game. Basically I was asked to make a pathfinding system for a large open world environment. So I did a little experimenting for a while until I came up with a system that would pre calculate all possible paths for NPCs based on a set of predetermined start and end points. Then the system creates models without humanoids(because humanoids are pretty awful for performance) and only allows animators to load animations on them. You can even interact with them by clicking on them. The client wanted to make a gta type of game so I just had the NPCs freak out when you click on them. As if you shot them. Because of my optimization techniques the system can simulate up to 2500 NPCs running around with their own thoughts all at once.",
+		"Previews": 
+		[
+			{
+				"Link": "https://drive.google.com/file/d/1EJSCwLaO43kwg5xmMPboHczJAE-ZN9y5/preview",
+				"Type": "video"
+			}
+			
+				
+			
+		]
       }
-      
       
     ],
     "Mods":
