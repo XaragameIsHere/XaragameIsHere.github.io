@@ -138,7 +138,7 @@
 	</ul>
 		<div id="previewBox">
 		<template id="imagePreview">
-		  <img id="image" src="../images/me.png" alt="screenShots" style=" width: 55%; height: 70%; display: block; position: absolute; top: 8%; left: 40%; border-style: inset; border-width: 5px;">
+		  <img id="image" src="../data/images/bcaPreview/1.jpg" alt="screenShots" style=" width: 55%; height: 70%; display: block; position: absolute; top: 8%; left: 40%; border-style: inset; border-width: 5px;">
 		  </template>
 		  
 		  <template id="videoPreview">
@@ -159,6 +159,7 @@
 	   const urlParams = new URLSearchParams(window.location.search);
 	   const mediaType = urlParams.get('mediaType');
 	   const index = urlParams.get('dataIndex');
+	   const previewBox = document.querySelector("#previewBox")
 	   
 	   console.log(mediaType);
 	   async function getJSON() {
@@ -172,6 +173,7 @@
 			json = await this.getJSON();  // command waits until completion
 			console.log(json);            // hello is now available
 		   console.log("hell2");
+		   document.getElementById("titleBar").innerHTML = json[mediaType][index]["Name"];
 		const showcaseBox = document.querySelector("#commentary");
 		   if (json[mediaType][index]["Commentary-Type"] == "google-docs")
 		   {
@@ -211,18 +213,18 @@
 	   	this.caller();
 	   
 	   	document.getElementById("ActionButton").addEventListener('click', (event) => {
-				console.log(json[mediaType][index]["link"]);
+				
 				window.location=json[mediaType][index]["link"];
-				document.getElementById("titleBar").innerHTML = json[mediaType][index]["Name"];
+			
+				
 			})
 	   
 	   function changeView(direction)
 	   {
-		   if (clone){
-			   clone.remove()
-		   }        
-		   console.log("hell3");
-		   const previewBox = document.querySelector("#previewBox")
+		   for (var element in previewBox.elements)
+		   {
+			   element.remove()
+		   }
 		   position = position + direction 
 		   position = clamp(position, 0, json[mediaType][index]["Previews"].length - 1)
 		   console.log(position)

@@ -178,6 +178,7 @@ quibusdam sed amet tempora. </li>
 		   
 	   
 			console.log(json[mediaType][index]["link"]);
+		   document.getElementById("titleBar").innerHTML = json[mediaType][index]["Name"];
 			document.getElementById("player-window").src = json[mediaType][index]["player-link"];
 		   document.getElementById("button-window").src = json[mediaType][index]["button-link"];
 		   document.getElementById("commentaryBox").innerHTML = json[mediaType][index]["Commentary"];

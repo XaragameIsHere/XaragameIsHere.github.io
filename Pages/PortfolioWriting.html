@@ -154,6 +154,7 @@ quibusdam sed amet tempora. </li>
 		   
 	   
 			console.log(json[mediaType][index]["link"]);
+		   document.getElementById("titleBar").innerHTML = json[mediaType][index]["Name"];
 			document.getElementById("reader").src = json[mediaType][index]["link"];
 		   document.getElementById("titleBar").innerHTML = json[mediaType][index]["Name"];
 		   document.getElementById("commentaryBox").innerHTML = json[mediaType][index]["Commentary"];
