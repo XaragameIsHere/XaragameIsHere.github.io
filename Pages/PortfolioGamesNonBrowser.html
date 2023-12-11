@@ -136,15 +136,26 @@
 	quibusdam sed amet tempora. </li>
 			  </template> 
 	</ul>
-			   
+		<div id="previewBox">
+		<template id="imagePreview">
+		  <img id="image" src="../images/me.png" alt="screenShots" style=" width: 55%; height: 70%; display: block; position: absolute; top: 8%; left: 40%; border-style: inset; border-width: 5px;">
+		  </template>
 		  
-		  <img src="../images/me.png" alt="screenShots" style=" width: 55%; height: 70%; display: block; position: absolute; top: 8%; left: 40%; border-style: inset; border-width: 5px;">
-		  <button style="position: absolute; height: 10%; width: 3%; top: 40%; left: 88%;"><img src="../images/arrow.png" alt="screenShots" style=" width: 100%; height: 100%; "></button>
-		  <button style="position: absolute; height: 10%; width: 3%; top: 40%; left: 41%; "><img src="../images/arrow.png" alt="screenShots" style=" width: 100%; height: 100%; transform: scaleX(-1);"></button>
-		  <button id = "ActionButton" style=" width: 30%; height: 10%; display: block; position: absolute; bottom: 8%; left: 50%; font-family: HelveticaNeue; font-size: 200%;">Play on Steam</button>
+		  <template id="videoPreview">
+		  <iframe id="video" src="https://drive.google.com/file/d/1EEHIbbEFBw90GtwDaREDX16NSXcNTxHn/preview" width="55%" height="70%" style="position: absolute; top: 8%; left: 40%;" allow="autoplay"></iframe>
+		</template>
+		</div>	   
+		  
+		  
+		  <button id="right" onClick="changeView(1)" style="position: absolute; height: 10%; width: 3%; top: 40%; left: 88%;"><img src="../images/arrow.png" alt="screenShots" style=" width: 100%; height: 100%; "></button>
+		  <button id="left" onClick="changeView(-1)" style="position: absolute; height: 10%; width: 3%; top: 40%; left: 41%; "><img src="../images/arrow.png" alt="screenShots" style=" width: 100%; height: 100%; transform: scaleX(-1);"></button>
+		  <button id="ActionButton" style=" width: 30%; height: 10%; display: block; position: absolute; bottom: 8%; left: 50%; font-family: HelveticaNeue; font-size: 200%;">Play on Steam</button>
 		  
 	</div>
    <script>
+	   const clamp = (number, min, max) => Math.max(min, Math.min(number, max));
+	   var clone;
+	   var position = 1
 	   const urlParams = new URLSearchParams(window.location.search);
 	   const mediaType = urlParams.get('mediaType');
 	   const index = urlParams.get('dataIndex');
@@ -160,7 +171,7 @@
 	   async function caller() {
 			json = await this.getJSON();  // command waits until completion
 			console.log(json);            // hello is now available
-		   
+		   console.log("hell2");
 		const showcaseBox = document.querySelector("#commentary");
 		   if (json[mediaType][index]["Commentary-Type"] == "google-docs")
 		   {
@@ -184,6 +195,8 @@
 			   text.src = json[mediaType][index]["Commentary"];
 			   showcaseBox.appendChild(clone);
 			}
+		   console.log("hell");
+		   changeView(1);
 		   /*
 		   	var result = [];
 				var keys = Object.keys(json);
@@ -203,13 +216,29 @@
 				document.getElementById("titleBar").innerHTML = json[mediaType][index]["Name"];
 			})
 	   
+	   function changeView(direction)
+	   {
+		   if (clone){
+			   clone.remove()
+		   }        
+		   console.log("hell3");
+		   const previewBox = document.querySelector("#previewBox")
+		   position = position + direction 
+		   position = clamp(position, 0, json[mediaType][index]["Previews"].length - 1)
+		   console.log(position)
+		   
+		   
+		   const template = document.querySelector(["#",json[mediaType][index]["Previews"][position]["Type"], 'Preview'].join(""));
+
+		   clone = template.content.cloneNode(true);
+			var text = clone.querySelector(["#", json[mediaType][index]["Previews"][position]["Type"]].join(""));
+
+		   text.src = json[mediaType][index]["Previews"][position]["Link"]
+
+		   previewBox.appendChild(clone);
+	   }
 	   	
-	   	function openAbout() {
-			document.getElementById("about-window").style.display = "block";
-		}
-		function closeAbout() {
-			document.getElementById("about-window").style.display = "none";
-		}
+	   	
 	</script>
 
   </body>

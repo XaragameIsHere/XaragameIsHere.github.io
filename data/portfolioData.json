@@ -45,7 +45,37 @@
         "Description": "A Garry's Mod map rendention of my own neighborhood",
         "link": "https://steamcommunity.com/sharedfiles/filedetails/?id=2983779001",
 		"Commentary-Type": "google-docs",
-		"Commentary": "https://docs.google.com/document/d/e/2PACX-1vS5JbV5ng_LWtro63ApAezrgp8zn9vD78vJb0fawK7GlvNSKv9i4e6t8qZHgfj84mjsrpMC9QYy2Pex/pub?embedded=true"
+		"Commentary": "https://docs.google.com/document/d/e/2PACX-1vS5JbV5ng_LWtro63ApAezrgp8zn9vD78vJb0fawK7GlvNSKv9i4e6t8qZHgfj84mjsrpMC9QYy2Pex/pub?embedded=true",
+		"Previews": 
+		[
+			
+			{
+				"Link": "data/images/1.jpg",
+				"Type": "image"
+			},
+
+			{
+				"Link": "data/images/2.jpg",
+				"Type": "image"
+			},
+
+			{
+				"Link": "data/images/3.jpg",
+				"Type": "image"
+			},
+
+			{
+				"Link": "data/images/4.jpg",
+				"Type": "image"
+			},
+
+			{
+				"Link": "data/images/5.jpg",
+				"Type": "image"
+			}
+				
+			
+		]
       }
     ],
     "Videos":
