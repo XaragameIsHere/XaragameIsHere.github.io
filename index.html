@@ -14,7 +14,7 @@
 	<div class="window" style="width: 100%; position: absolute; bottom: 0; left: 0; height: 5%" >
 	  <div class="status-bar" style="height: 100%">
 		  
-		<button style="width: 10%; font-size: 2vw; font-family: HelveticaNeue; " ><img src="images/winbows.png" alt="start" style=" width: 17%;">Start</button>
+		<button onClick="openAbout('startwindow')" style="width: 10%; font-size: 2vw; font-family: HelveticaNeue; " ><img src="images/winbows.png" alt="start" style=" width: 17%;">Start</button>
 		<button onclick="window.location.href='https://www.youtube.com/@XaragameIsHere';" style="width: 5%; font-size: 2vw;"><img src="images/youboob.png" style=" width: 80%;" alt="Youtube" href="https://www.youtube.com/@XaragameIsHere"></button>
 		<button onclick="window.location.href='https://xaragame.itch.io/';" style="width: 5%; font-size: 2vw;"><img src="images/itch.svg" style=" width: 50%;" alt="Itch"></button>
 		<button onclick="window.location.href='https://steamcommunity.com/id/Za-ra-game/';" style="width: 5%; font-size: 2vw;"><img src="images/steam.png" style=" width: 50%;" alt="Steam"></button>
@@ -22,9 +22,10 @@
 		<button onclick="window.location.href='https://ko-fi.com/xaragame';" style="width: 5%; font-size: 2vw;"><img src="images/kofi.png" style=" width: 50%;" alt="Ko-Fi"></button>
 		<button onclick="window.location.href='https://discord.com/users/441424104260763661';" style="width: 5%; font-size: 2vw;"><img src="images/Discord.png" style=" width: 50%;" alt="Discord"></button>
 		<button onclick="window.location.href='mailto:xaragamens30@gmail.com';" style="width: 5%; font-size: 2vw;"><img src="images/Mail.png" style=" width: 50%;" alt="Email"></button>
+		<button onclick="openAbout('playlist')" style="width: 5%; font-size: 2vw;"><img src="images/music.jpg" style=" width: 50%;" alt="Email"></button>
 	  </div>  
 	 </div>
-	<div class="window" style="position: absolute;  width: 60%; height: 80%; background: pink; max-height: 500px; max-width: 800px;">
+	<div id="startwindow" class="window" style="position: absolute;  width: 60%; height: 80%; background: pink; max-height: 500px; max-width: 800px;">
 
 	  <div class="title-bar">
 		<img src="/images/me.png" alt="me" style=" width: 2%;">
@@ -32,7 +33,7 @@
 		<div class="title-bar-controls">
 		  <button aria-label="Minimize"></button>
 		  <button aria-label="Maximize"></button>
-		  <button aria-label="Close"></button>
+		  <button onClick="closeAbout('startwindow')" aria-label="Close"></button>
 		</div>
 		  
 	  </div>
@@ -111,13 +112,13 @@
 				<div class="title-bar-controls">
 				  <button aria-label="Minimize"></button>
 				  <button aria-label="Maximize"></button>
-				  <button onClick="closeAbout('about-window')" aria-label="Close"></button>
+				  <button onClick="closeAbout('playlist')" aria-label="Close"></button>
 				</div>
 		
 		</div>
 	  <iframe allow="autoplay *; encrypted-media *; fullscreen *; clipboard-write" frameborder="0" height="326" style="width:100%;max-width:660px;overflow:hidden;border-radius:10px;" sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-storage-access-by-user-activation allow-top-navigation-by-user-activation" src="https://embed.music.apple.com/us/playlist/xaras-playlist/pl.u-xlyNEpduklR7K8z"></iframe>
 </div>
-	  <div id="recommendations-window" class="window" style="display: none; position: absolute; top: 2%; left: 2%; width: 60%; height: 80%; background: pink;">
+	  <div id="lifeUpdates-window" class="window" style="display: none; position: absolute; top: 2%; left: 2%; width: 60%; height: 80%; background: pink;">
 
 	  <div class="title-bar">
 		<img src="/images/me.png" alt="me" style=" width: 2%;">
@@ -130,7 +131,7 @@
 		  
 		</div>
 		  
-		  <div style="display: inline-block; height:90%;width:30%; background: white; border:3px solid #ccc;overflow:auto;">
+		  <div style="position: relative; top: 2%; left: 2%; height:90%;width:40%; background: white; border:3px solid #ccc;overflow:auto;">
 			<button style="width: 100%; font-size: 2vw; font-family: HelveticaNeue; " ><img src="images/winbows.png" alt="start" style=" width: 17%;">Games</button>
 			<button style="width: 100%; font-size: 2vw; font-family: HelveticaNeue; " ><img src="images/winbows.png" alt="start" style=" width: 17%;">Youtubers</button>
 			<button style="width: 100%; font-size: 2vw; font-family: HelveticaNeue; " ><img src="images/winbows.png" alt="start" style=" width: 17%;">Movies</button>
@@ -138,12 +139,32 @@
 			<button style="width: 100%; font-size: 2vw; font-family: HelveticaNeue; " ><img src="images/winbows.png" alt="start" style=" width: 17%;">Books</button>
 		</div>
 		  
-		
-		  <div style="display: inline-block; height:90%;width:30%; background: white; border:3px solid #ccc;overflow:auto;">
-			</div>
-		  <div style="display: inline-block; height:90%;width:30%; background: white; border:3px solid #ccc;overflow:auto;">
-			</div>
-	 </div>
+		<ul class="tree-view" style="position: absolute; overflow-y: auto; overflow-x: hidden; bottom: 7%; right: 1%; display: inline-flex; width: 50%; height: 80%; font-size: 150%">
+		  <li id="commentaryBox">Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia,
+molestiae quas vel sint commodi repudiandae consequuntur voluptatum laborum
+numquam blanditiis harum quisquam eius sed odit fugiat iusto fuga praesentium
+optio, eaque rerum! Provident similique accusantium nemo autem. Veritatis
+obcaecati tenetur iure eius earum ut molestias architecto voluptate aliquam
+nihil, eveniet aliquid culpa officia aut! Impedit sit sunt quaerat, odit,
+tenetur error, harum nesciunt ipsum debitis quas aliquid. Reprehenderit,
+quia. Quo neque error repudiandae fuga? Ipsa laudantium molestias eos 
+sapiente officiis modi at sunt excepturi expedita sint? Sed quibusdam
+recusandae alias error harum maxime adipisci amet laborum. Perspiciatis 
+minima nesciunt dolorem! Officiis iure rerum voluptates a cumque velit 
+quibusdam sed amet tempora.Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia,
+molestiae quas vel sint commodi repudiandae consequuntur voluptatum laborum
+numquam blanditiis harum quisquam eius sed odit fugiat iusto fuga praesentium
+optio, eaque rerum! Provident similique accusantium nemo autem. Veritatis
+obcaecati tenetur iure eius earum ut molestias architecto voluptate aliquam
+nihil, eveniet aliquid culpa officia aut! Impedit sit sunt quaerat, odit,
+tenetur error, harum nesciunt ipsum debitis quas aliquid. Reprehenderit,
+quia. Quo neque error repudiandae fuga? Ipsa laudantium molestias eos 
+sapiente officiis modi at sunt excepturi expedita sint? Sed quibusdam
+recusandae alias error harum maxime adipisci amet laborum. Perspiciatis 
+minima nesciunt dolorem! Officiis iure rerum voluptates a cumque velit 
+quibusdam sed amet tempora. </li>
+</ul>
+</div>
 	  <div id="lifeUpdates-window" class="window" style="display: none; position: absolute; top: 2%; left: 2%; width: 60%; height: 80%; background: pink;">
 
 	  <div class="title-bar">
