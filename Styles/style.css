@@ -139,8 +139,8 @@ a:link { text-decoration: none; }
 #boxtext {
   display: inline;
   font-family: HelveticaNeue;
-  /*font-size: 16px;*/
-  font-size: 1vw;
+  /*font-size: 8px;*/
+  font-size: 3vw;
   padding: 20px;
 }
 

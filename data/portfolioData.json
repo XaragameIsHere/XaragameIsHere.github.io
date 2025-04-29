@@ -308,8 +308,55 @@
     ],
     "Code Snippets":
     [
-      
-      
+      {
+        "Name": "Rhythm Game Beat Manager",
+        "Creation Date": "December 12th 2024",
+        "Description": "The script for displaying beats in Shrimp fried beats",
+        "link": "https://emgithub.com/iframe.html?target=https%3A%2F%2Fgithub.com%2FXaragameIsHere%2Fshrimp-shooter%2Fblob%2Fmain%2FAssets%2FScripts%2FBeaterator.cs&amp;style=github&amp;type=code&amp;showBorder=on&amp;showLineNumbers=on&amp;showFileMeta=on&amp;showFullPath=on&amp;showCopy=one",
+        "Commentary":""
+      },
+      {
+        "Name": "Use Component",
+        "Creation Date": "July 16th 2023",
+        "Description": "Script for have interactible objects and triggers",
+        "link": "https://emgithub.com/iframe.html?target=https%3A%2F%2Fgithub.com%2FXaragameIsHere%2FBattleOfTheHeart-SourceCode%2Fblob%2Fmain%2FAssets%2FScripts%2FUseComponent.cs&style=github&type=code&showBorder=on&showLineNumbers=on&showFileMeta=on&showFullPath=on&showCopy=on",
+        "Commentary":""
+      },
+      {
+        "Name": "Dialogue System",
+        "Creation Date": "July 6th 2023",
+        "Description": "Dialogue System for Battle of the Heart and it's special dialogue interactions",
+        "link": "https://emgithub.com/iframe.html?target=https%3A%2F%2Fgithub.com%2FXaragameIsHere%2FBattleOfTheHeart-SourceCode%2Fblob%2Fmain%2FAssets%2FScripts%2FplayerUIController.cs&style=github&type=code&showBorder=on&showLineNumbers=on&showFileMeta=on&showFullPath=on&showCopy=on",
+        "Commentary":""
+      },
+      {
+        "Name": "Dialogue System",
+        "Creation Date": "July 6th 2023",
+        "Description": "Dialogue System for Battle of the Heart and it's special dialogue interactions",
+        "link": "https://emgithub.com/iframe.html?target=https%3A%2F%2Fgithub.com%2FXaragameIsHere%2FBattleOfTheHeart-SourceCode%2Fblob%2Fmain%2FAssets%2FScripts%2FplayerUIController.cs&style=github&type=code&showBorder=on&showLineNumbers=on&showFileMeta=on&showFullPath=on&showCopy=on",
+        "Commentary":""
+      },
+      {
+        "Name": "Grappling Hook",
+        "Creation Date": "Februrary 14th 2024",
+        "Description": "2D Grappling Hook",
+        "link": "https://emgithub.com/iframe.html?target=https%3A%2F%2Fgithub.com%2FXaragameIsHere%2Fgamedevguilduntitledproject%2Fblob%2Fmain%2FAssets%2FScripts%2FgrapplingHook.cs&style=github&type=code&showBorder=on&showLineNumbers=on&showFileMeta=on&showFullPath=on&showCopy=on",
+        "Commentary":""
+      },
+      {
+        "Name": "Enemy Scripting For Battle of the Heart",
+        "Creation Date": "July 4th 2023",
+        "Description": "Scripts for handling the behaviors of the enemies of Battle of the Heart",
+        "link": "https://emgithub.com/iframe.html?target=https%3A%2F%2Fgithub.com%2FXaragameIsHere%2FBattleOfTheHeart-SourceCode%2Fblob%2Fmain%2FAssets%2FScripts%2FenemyScripting.cs&style=github&type=code&showBorder=on&showLineNumbers=on&showFileMeta=on&showFullPath=on&showCopy=on",
+        "Commentary":""
+      },
+      {
+        "Name": "3D Movement",
+        "Creation Date": "May 22nd 2024",
+        "Description": "3D Movement System for a Mech Robot Game",
+        "link": "https://emgithub.com/iframe.html?target=https%3A%2F%2Fgithub.com%2FXaragameIsHere%2FeverybodyWantsToRuleTheWorld_Source%2Fblob%2Fmain%2FAssets%2FScripts%2Fscript_movement.cs&style=github&type=code&showBorder=on&showLineNumbers=on&showFileMeta=on&showFullPath=on&showCopy=on",
+        "Commentary":""
+      }
     ],
     "models":
     [

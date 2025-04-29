@@ -25,7 +25,7 @@
 		<button onclick="openAbout('playlist')" style="width: 5%; font-size: 2vw;"><img src="images/music.jpg" style=" width: 50%;" alt="Email"></button>
 	  </div>  
 	 </div>
-	<div id="startwindow" class="window" style="position: absolute;  width: 60%; height: 80%; background: pink; max-height: 500px; max-width: 800px;">
+	<div id="startwindow" class="window" style="position: absolute; height: 60%; aspect-ratio: 3/2; background: pink;">
 
 	  <div class="title-bar">
 		<img src="/images/me.png" alt="me" style=" width: 2%;">
@@ -43,9 +43,9 @@
 
 			</div>
 		</div>
-		<div style=" width: 50%; height: auto;">
+		<div style=" width:40%; height: 50%; overflow-y:auto;">
 		 
-			<div style="top: 0%; right: 50%; height: 50%; width: 50%; background-color: #f7f7f7;">
+			<div style="top: 0%; right: 50%; height: auto; width: 100%; background-color: #f7f7f7;">
 			  <p class="light" style="display: inline; font-family: HelveticaNeue; font-size: 20pt;">Site Highlights</p>
 			</div>
 			<div class="listbox" style="border-left: 5px solid #d52d00;">
@@ -71,7 +71,7 @@
 			</div>
 		  
 		</div>
-		<h1 class="gradient-text" style="position: absolute; text-align: center; font-size: 150%; width: 30%; top: 45%; right: 0%; color: ">Xara's Selected Works</h1>
+		<h1 class="gradient-text" style="position: absolute; text-align: center; font-size: 150%; width: 30%; top: 45%; right: 0%;">Xara's Selected Works</h1>
 		<p>&nbsp;</p>
 <ul id="showcaseBox" class="tree-view" style="position: absolute; overflow-y: hidden; overflow-x: auto; bottom: 1.5%; right: 1.5%; display: inline-flex; width: 50%; height: 45%; font-size: 150%">
     <template id="Showcase">
@@ -105,7 +105,7 @@
 		
   </div>
 	  
-  <div id="playlist" class="window" style="display: block; position: absolute; top: 35%; left: 60%; width: 30%; height: 352px; max-height: 352px; max-width: 400px; background: pink; ">
+  <div id="playlist" class="window" style="display: block; position: absolute; top: 35%; left: 60%; height: 50%; aspect-ratio: 4/5; background: pink; ">
     <div class="title-bar">
 			<img src="/images/me.png" alt="me" style=" width: 2%;">
 			<div class="title-bar-text">Xara's Playlist</div>
@@ -116,7 +116,7 @@
 				</div>
 		
 		</div>
-	  <iframe allow="autoplay *; encrypted-media *; fullscreen *; clipboard-write" frameborder="0" height="326" style="width:100%;max-width:660px;overflow:hidden;border-radius:10px;" sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-storage-access-by-user-activation allow-top-navigation-by-user-activation" src="https://embed.music.apple.com/us/playlist/xaras-playlist/pl.u-xlyNEpduklR7K8z"></iframe>
+	  <iframe allow="autoplay *; encrypted-media *; fullscreen *; clipboard-write" frameborder="0" height="94%" style="width:100%;max-width:660px;overflow:hidden;border-radius:10px;" sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-storage-access-by-user-activation allow-top-navigation-by-user-activation" src="https://embed.music.apple.com/us/playlist/xaras-playlist/pl.u-xlyNEpduklR7K8z"></iframe>
 </div>
 	  <div id="lifeUpdates-window" class="window" style="display: none; position: absolute; top: 2%; left: 2%; width: 60%; height: 80%; background: pink;">
 
@@ -194,10 +194,10 @@ quibusdam sed amet tempora. </li>
 		
 		  
 	 </div>
-	 <div id="portfolio-window" class="window" style="display: none; position: absolute; top: 2%; left: 2%; width: 60%; height: 80%; background: pink; max-height: 500px; max-width: 800px;">
+	 <div id="portfolio-window" class="window" style="display: none; position: absolute; top: 2%; left: 2%; height: 70%; aspect-ratio: 3/2; background: pink;">
 
 	  <div class="title-bar">
-		<img src="/images/me.png" alt="me" style=" width: 2%; alt=me;">
+		<img src="/images/me.png" alt="me" style=" width: 2%;">
 		<div class="title-bar-text">Xara's Portfolio</div>
 		<div class="title-bar-controls">
 		  <button aria-label="Minimize"></button>
@@ -219,8 +219,7 @@ quibusdam sed amet tempora. </li>
 				<li id="Devlogs/Documentations" class="tab PortfolioWriting" role="tab"><a href="#tabs">Documentations/Devlogs</a></li>
 				<li id="Scripts/Stories" class="tab PortfolioWriting" role="tab"><a href="#tabs">Scripts/Stories</a></li>
 				<li id="Roblox" class="tab PortfolioGamesNonBrowser" role="tab"><a href="#tabs">Roblox</a></li>
-				<li id="Code Snippets" class="tab" role="tab"><a href="#tabs">Code Snippets</a></li>
-				<li id="models" class="tab" role="tab"><a href="#tabs">Models</a></li>
+				<li id="Code Snippets" class="tab PortfolioCode" role="tab"><a href="#tabs">Code Snippets</a></li>
 				<li id="Photoshops" class="tab PortfolioImage" role="tab"><a href="#tabs">Photoshops</a></li>
 				<li id="Essays" class="tab PortfolioWriting" role="tab"><a href="#tabs">Essays</a></li>
 			  </menu>
