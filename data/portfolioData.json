@@ -355,7 +355,7 @@
         "Creation Date": "May 22nd 2024",
         "Description": "3D Movement System for a Mech Robot Game",
         "link": "https://emgithub.com/iframe.html?target=https%3A%2F%2Fgithub.com%2FXaragameIsHere%2FeverybodyWantsToRuleTheWorld_Source%2Fblob%2Fmain%2FAssets%2FScripts%2Fscript_movement.cs&style=github&type=code&showBorder=on&showLineNumbers=on&showFileMeta=on&showFullPath=on&showCopy=on",
-        "Commentary":""
+        "Commentary":"This is code I wrote for a game I made back in my 'Design Craft' class from high school I was given the opportunity to work on a game for my final project and I decided working on a 3D arena shooter where you played as a mech pilot fighting against other mechs for coverage on a map. Because of that I needed a 3D player movement for controlling mechs. My main method here was using the character controller component and using the update loop to read input for movement. Input is retrieved from a separate centralized input script that takes input from the new input system. Making it work with a variety of scripts. "
       }
     ],
     "models":
