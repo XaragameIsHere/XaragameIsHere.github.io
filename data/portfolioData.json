@@ -327,35 +327,28 @@
         "Creation Date": "July 16th 2023",
         "Description": "Script for have interactible objects and triggers",
         "link": "https://emgithub.com/iframe.html?target=https%3A%2F%2Fgithub.com%2FXaragameIsHere%2FBattleOfTheHeart-SourceCode%2Fblob%2Fmain%2FAssets%2FScripts%2FUseComponent.cs&style=github&type=code&showBorder=on&showLineNumbers=on&showFileMeta=on&showFullPath=on&showCopy=on",
-        "Commentary":""
+        "Commentary":"So basically this componenent is for players to be able to click on a key near a certain object and interact with it. It's a pretty simple component, it just checks distance of the player to the button and then when the player presses it the game fires a Unity Event to whatever function in another script is needed."
       },
       {
         "Name": "Dialogue System",
         "Creation Date": "July 6th 2023",
         "Description": "Dialogue System for Battle of the Heart and it's special dialogue interactions",
         "link": "https://emgithub.com/iframe.html?target=https%3A%2F%2Fgithub.com%2FXaragameIsHere%2FBattleOfTheHeart-SourceCode%2Fblob%2Fmain%2FAssets%2FScripts%2FplayerUIController.cs&style=github&type=code&showBorder=on&showLineNumbers=on&showFileMeta=on&showFullPath=on&showCopy=on",
-        "Commentary":""
-      },
-      {
-        "Name": "Dialogue System",
-        "Creation Date": "July 6th 2023",
-        "Description": "Dialogue System for Battle of the Heart and it's special dialogue interactions",
-        "link": "https://emgithub.com/iframe.html?target=https%3A%2F%2Fgithub.com%2FXaragameIsHere%2FBattleOfTheHeart-SourceCode%2Fblob%2Fmain%2FAssets%2FScripts%2FplayerUIController.cs&style=github&type=code&showBorder=on&showLineNumbers=on&showFileMeta=on&showFullPath=on&showCopy=on",
-        "Commentary":""
+        "Commentary":"This is the dialogue system for Battle of the Heart. Since this game requires players to interact with and befriend their enemies. Because of this we had to do JSON Parsing to store data regarding every character's dialogue and what all the possibilities are. Then having that JSON Parsed into static classes, then loading that data and letting the player interacting with the dialogue."
       },
       {
         "Name": "Grappling Hook",
         "Creation Date": "Februrary 14th 2024",
         "Description": "2D Grappling Hook",
         "link": "https://emgithub.com/iframe.html?target=https%3A%2F%2Fgithub.com%2FXaragameIsHere%2Fgamedevguilduntitledproject%2Fblob%2Fmain%2FAssets%2FScripts%2FgrapplingHook.cs&style=github&type=code&showBorder=on&showLineNumbers=on&showFileMeta=on&showFullPath=on&showCopy=on",
-        "Commentary":""
+        "Commentary":"This code is for a grappling hook mechanic in a 2D zombie game. Essentially it just raycasts in the direction the player points, draws a line renderer and sets the velocity of the player mover to that direction."
       },
       {
         "Name": "Enemy Scripting For Battle of the Heart",
         "Creation Date": "July 4th 2023",
         "Description": "Scripts for handling the behaviors of the enemies of Battle of the Heart",
         "link": "https://emgithub.com/iframe.html?target=https%3A%2F%2Fgithub.com%2FXaragameIsHere%2FBattleOfTheHeart-SourceCode%2Fblob%2Fmain%2FAssets%2FScripts%2FenemyScripting.cs&style=github&type=code&showBorder=on&showLineNumbers=on&showFileMeta=on&showFullPath=on&showCopy=on",
-        "Commentary":""
+        "Commentary":"This is the scripting for the enemyies in battle of the heart. If you know anything about the game it revolves around fighting 'enemies' and then talking to them to understand and befriend them. Doing a game like this requires having a bunch of unique enemies with unique attacks. However if you actually look at the game, you'll notice that enemies have different sets of the same attacks. The snipe where the the enemy shoots precise bullets with a particle system, the throwable which is a less precise grenade launch with rigidbodies, the double shot that shoots like a double barrel shot gun with the particle sytem, spray that just sprays bullets like a hose of particles, drop that just drops rigidbody obstacles from the ceiling, narrow that just sprays from a narrow cone of particles. and drop in the big guy just drops in and like moves across the screen and fucks shit up. The idea is to mainly use particle systems to collide with the player and cause damage."
       },
       {
         "Name": "3D Movement",
