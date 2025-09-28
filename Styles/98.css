@@ -779,7 +779,7 @@ menu[role=tablist]>li {
 }
 
 menu[role=tablist]>li[aria-selected=true] {
-    background-color: silver;
+    background-color: #df9aac;
     margin-left: -3px;
     margin-top: -2px;
     padding-bottom: 2px;

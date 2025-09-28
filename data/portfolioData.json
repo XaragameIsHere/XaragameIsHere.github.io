@@ -53,7 +53,7 @@
         "Commentary": "Sorry for this being so late"
       }
     ],
-    "Maps":
+    "Mods":
     [
       {
         "Name": "gm_black_creek_ave",
@@ -66,36 +66,135 @@
 		"Previews": 
 		[
 			{
-				"Link": "../data/images/bcaPreview/6.jpg",
+				"Link": "https://images.steamusercontent.com/ugc/2070013166207877333/76E18CF9B17A77546495810D4410D2EFA3F2CFC0/?imw=268&imh=268&ima=fit&impolicy=Letterbox&imcolor=%23000000&letterbox=true",
 				"Type": "image"
 			},
 			{
-				"Link": "../data/images/bcaPreview/1.jpg",
-				"Type": "image"
-			},
-
-			{
-				"Link": "../data/images/bcaPreview/2.jpg",
+				"Link": "https://images.steamusercontent.com/ugc/17501991701299868889/493133F771BB8848CE8FF3D88F6AC796DB3510F1/?imw=637&imh=358&ima=fit&impolicy=Letterbox&imcolor=%23000000&letterbox=true",
 				"Type": "image"
 			},
 
 			{
-				"Link": "../data/images/bcaPreview/3.jpg",
+				"Link": "https://images.steamusercontent.com/ugc/10445627443706389814/6DB9815B4BAE040DC57E6E81A1309A202016719E/?imw=637&imh=358&ima=fit&impolicy=Letterbox&imcolor=%23000000&letterbox=true",
 				"Type": "image"
 			},
 
 			{
-				"Link": "../data/images/bcaPreview/4.jpg",
+				"Link": "https://images.steamusercontent.com/ugc/11180726035140598392/F4E5897C3415F48CCCA180642A60531DE7505D5F/?imw=637&imh=358&ima=fit&impolicy=Letterbox&imcolor=%23000000&letterbox=true",
 				"Type": "image"
 			},
 
 			{
-				"Link": "../data/images/bcaPreview/5.jpg",
+				"Link": "https://images.steamusercontent.com/ugc/12705470073279363072/A6999C6FAB9ADC0EAFD5B8F3CC133FA605AB79EF/?imw=637&imh=358&ima=fit&impolicy=Letterbox&imcolor=%23000000&letterbox=true",
+				"Type": "image"
+			},
+
+			{
+				"Link": "https://images.steamusercontent.com/ugc/15491564473415398354/8A06FC6ED995C1B431F64CB2F493464D6C689096/?imw=637&imh=358&ima=fit&impolicy=Letterbox&imcolor=%23000000&letterbox=true",
 				"Type": "image"
 			}
 				
 			
 		]
+      },
+      {
+        "Name": "Civic Center/Grand Park Station",
+        "Creation Date": "July 7th 2025",
+        "Description": "A Cities Skylines asset depicting the Civic Center/Grand Park Metro Station in Los Angeles",
+        "Platform": "Steam",
+        "link": "https://steamcommunity.com/sharedfiles/filedetails/?id=3519647140",
+        "Commentary-Type": "standard",
+        "Commentary": "Girl I have done it again constantly raising the bar for you all and doing it flawlessly. You'd like to say you're surprised but you know who I am. Once again, back with another LA Asset. <br><br>This month I give you a scale recreation of the MOS-1 Stations on the Los Angeles Metro Rail B and D Lines. Opening in 1993 as part of the Red Line Project. MOS-1, or Minimum Operating Segment 1, was the first five of what by the year 2000 would be thirteen new heavy rail subway stations running from the heart of Downtown Los Angeles, to Hollywood, and the San Fernando Valley. This first segment runs from Union Station in Chinatown, to the Civic Center/Grand Park Station by City Hall, to Pershing Square at 5th and Hill, then 7th Street/Metro Center at 7th and Figueroa, and terminating at Westlake/MacArthur Park. These stations were some of the first in the Metro Rail system. Marking the beginnings of the mass transit renaissance that can still be felt in Los Angeles.<br><br>Each minimum operating segment of the red line has its own unique quirks in their architecture and MOS-1 is no exception. Stations on this operating segment, with the Exception of Union Station and 7th Street/Metro Center, all have a distinct ovular canopy supported by 3 steel beams that covers the escalators into the station. With stainless steel fittings within the canopy, covered by a teal tinted glass roof. Additionally these stations all have a marble U shape around the edge of the opening that leads you underground to the station. With a circular stainless steel beam aligning with it.<br><br>For this project however, my main inspiration was the Civic Center/Grand Park station located in the middle of the Gloria Molina Grand Park and a short walk away from City Hall. As the name implies this is located in the Center of Government for LA County. A frequent spot for banal mundanities like accessing government services, court appearances, and local government work it also tends to be a hotspot for protests, rallies, and civic action. With the area being a large concentration of anti-ICE protests in June of 2025. However, the station is also as the name once again suggests, in a park. Making it an excellent destination to travel to for a pleasant picnic when the area isn't be rocked by Civil Unrest and Protest.<br><br>This station is an excellent addition to your city if you're looking for a station to complement your city park or your city hall. With trees, greenery and benches all around to make a wonderful place for citizens to hang around and really add to the character of your city.<br><br>I did take some creative liberties in order to make it work better with the game. This station only has one entrance which isn't accurate for most MOS-1 stations. With the exception of Westlake/Macarthur Park which had it's second entrance closed off for security reasons in 2020.,all MOS-1 stations tend to have two entrances. Additionally some of the plants and benches aren't accurate because I just didn't wanna make new ones so I used the vanilla ones.<br><br>I made this model because I was shocked by the lack of LA Metro Rail Stuff that was on the workshop. Especially LA Metro Rail Stuff so I decided to make my own. I think next I'm gonna try doing Union Station so follow me and look out for that one coming probably in the next month or so. We'll see how things go. After Union maybe I might go for North Hollywood Station or Hollywood/Highland or something Like that. I also have a Breda A650 model that is pretty much done, it just needs to be textured sooooooo, maybe maybe in the next week or so you'll get a metro rail car asset to complement this.<br><br>If you liked this consider leaving a positive review and a comment, my ego really appreciates it. Also consider buying me a coffee and tipping me on Ko-Fi. It really would mean a lot considering my current broke and jobless status.<br><br>And that's it. As for credits, the station was modeled, textured and imported by me. The system map and TAP vending machine were made by Polygon in their excellent prop pack Los Angeles Metro Prop Pack . And the Benches, Trees and trashcans are vanilla assets. Feel free to use this however you like, just make sure to credit me and if you're gonna repost this, just be transformative with it. Don't just ape it, and if you do, at least again, consider my Ko-fi.",
+        "Previews":
+        [
+            {
+                "Link": "https://images.steamusercontent.com/ugc/10561041135914445921/52532D4D7C2054088744C41FDCE499BA70D84BD3/?imw=637&imh=358&ima=fit&impolicy=Letterbox&imcolor=%23000000&letterbox=true",
+                "Type": "image"
+            },
+            {
+                "Link": "https://images.steamusercontent.com/ugc/17501991701299868889/493133F771BB8848CE8FF3D88F6AC796DB3510F1/?imw=637&imh=358&ima=fit&impolicy=Letterbox&imcolor=%23000000&letterbox=true",
+                "Type": "image"
+            },
+
+            {
+                "Link": "https://images.steamusercontent.com/ugc/14654944489553042455/AFA5B1B2B5300F593190B8C52597E6DA400650C7/?imw=637&imh=358&ima=fit&impolicy=Letterbox&imcolor=%23000000&letterbox=true",
+                "Type": "image"
+            },
+
+            {
+                "Link": "https://images.steamusercontent.com/ugc/9781363640375046008/6D82BEF0964D31FCBA26C5F618542509FE6627E5/?imw=637&imh=358&ima=fit&impolicy=Letterbox&imcolor=%23000000&letterbox=true",
+                "Type": "image"
+            },
+
+            {
+                "Link": "https://images.steamusercontent.com/ugc/17214010324497362434/7EC96E3C2873810092FAA20628BFBB9C17239627/?imw=637&imh=358&ima=fit&impolicy=Letterbox&imcolor=%23000000&letterbox=true",
+                "Type": "image"
+            }
+        ]
+      },
+      {
+        "Name": "Los Angeles City Hall",
+        "Creation Date": "June 16th 2025",
+        "Description": "A Cities Skylines asset depicting the Los Angeles City Hall",
+        "Platform": "Steam",
+        "link": "https://steamcommunity.com/sharedfiles/filedetails/?id=3501527772",
+        "Commentary-Type": "standard",
+        "Commentary": "This is a scale rendition of the Los Angeles City Hall located in the Civic Center of Downtown Los Angeles, California. <br><br>City Hall is the concentration of all public services and government for the City of Los Angeles (Not to be confused with the county). With it being home to the mayor's office, city council chambers, city attorney's office, and so much more. The Art Deco building, constructed in 1928, at the time was the largest building in the Downtown Skyline at a height of 458 feet. It has an observation deck at the top, along with the auxiliary city office building dubbed 'City Hall East' with a much more Modern and Brutalist architecture style.<br><br>I made this mod because I have been trying to do a playthrough where I tried to replicate a city with the development patterns of Los Angeles and was disappointed to find the lack of a city hall for my city on the workshop. So I decided to remedy that. I tried to remain as faithful to the original as possible whilst also not compromising on performance and I'm proud of the result. However I did have to leave some aspects out due to the Asset Creation tool having a 16 by 8 grid limit on how large your asset can be. Aspects like the shaded plaza on the southern end of City Hall, the plaza to the south of City Hall East, City Hall South, and the dead, subterranean, Los Angeles Mall to the North of City Hall East. If I get enough support from this mod maybe I'll make those next. Although currently I'm focusing on making LA Union Station and the LA Metro B Line station exteriors from downtown and mid city so stay tuned for those.<br><br>Also as a tip, this building works best when on flat terrain so make sure you level it out before placing otherwise the streets are gonna be weird. <br><br> This was my first Cities Skylines asset.<br><br>If you liked this asset, please consider supporting me on Ko-Fi so I can continue to make quality models like the one before you. This is the result of several months of work (Although with the months of procrastination and distraction it probably was more like 3 weeks but still) And I'm happy to finally be getting it out.<br><br>You can even commission your own asset on my Ko-fi.<br><br><a href='https://ko-fi.com/xaragame'><img src='https://i.ibb.co/0sq9sJn/61e11e22d8ff4a5b4a1b3346-Supportbutton-1.png'></a><br><br>And... yeah that's really it. All textures, models and renders were made by me, Xaragame, in GIMP and Blender outside of the trees and whatnot from the base game I sprinkled through. I don't mind you using it however you please, just make sure you credit me in some way and make whatever you do with it transformative. Don't just ape my stuff. Also again if you do, consider the Ko-Fi.",
+        "Previews":
+        [
+            {
+                "Link": "https://images.steamusercontent.com/ugc/10993422387599933440/D3A1566F51719461F5E8CB5BD4E627FD9FD460A6/?imw=637&imh=358&ima=fit&impolicy=Letterbox&imcolor=%23000000&letterbox=true",
+                "Type": "image"
+            },
+            {
+                "Link": "https://images.steamusercontent.com/ugc/16706541581484447214/3C6EA1ECE57DDB01406EE872B4CE24913DDD8C9D/?imw=637&imh=358&ima=fit&impolicy=Letterbox&imcolor=%23000000&letterbox=true",
+                "Type": "image"
+            },
+            {
+                "Link": "https://images.steamusercontent.com/ugc/18382214267557858789/699FBF9605D87D969EF0A6A3B3ADE93D5075A768/?imw=637&imh=358&ima=fit&impolicy=Letterbox&imcolor=%23000000&letterbox=true",
+                "Type": "image"
+            },
+            {
+                "Link": "https://images.steamusercontent.com/ugc/18339349723961579640/6D05E55ADC2CA07E0F27FA0211585F444E01947F/?imw=637&imh=358&ima=fit&impolicy=Letterbox&imcolor=%23000000&letterbox=true",
+                "Type": "image"
+            },
+            {
+                "Link": "https://images.steamusercontent.com/ugc/13089087737421124899/CD53344CA22D1833E0C3470709D1934D51E40B3F/?imw=637&imh=358&ima=fit&impolicy=Letterbox&imcolor=%23000000&letterbox=true",
+                "Type": "image"
+            }
+        ]
+      },
+      {
+        "Name": "Xaragame's Mediaboxes",
+        "Creation Date": "June 15th 2023",
+        "Description": "A source engine prop pack of various dvds and books and games",
+        "Platform": "Itch.io",
+        "link": "https://xaragame.itch.io/xaragames-media-props",
+        "Commentary-Type": "standard",
+        "Commentary": "This is my source engine prop collection with 25 different boxes from a media collection. <br><br>This collection includes<br><br>A large Videogame Disc/DVD model with 11 skins like...<br><br><ul><li>A Simpsons Season 8 DVD Box</li><li>A GTA IV Box</li><li>A GTA San Andreas Box</li><li>A Cars DVD Box</li><li>and more</li></ul><br><br>A small Videogame Disc/DVD model with 8 skins like...<br><br><ul><li>A GTA V Box</li><li>An RDR2 Box</li><li>A Gran Turismo 5 Box</li><li>A Windows 98 Software Box</li><li>and more</li></ul><br><br>A Book Model with 4 skins like...<ul><li>To kill a mockingbird</li><li>1984</li><li>Animal Farm</li><li>Charlotte's Web</li></ul><br><br>A Comic book model with 3 skins like...<br><br><ul><li>A simpsons comic book</li><li>A Calvin and Hobbes Book</li><li>Another Calvin and Hobbes Book</li></ul><br><br>I do not claim ownership of any of the properties depicted here and I was not sponsored. I needed some media to put in my media collection in my gmod rendition of my own neighborhood and I decided to take a bunch of books, games and DVDs from my room, turn them into a texture in photoshop, and slap them on a couple of blender cubes. To my knowledge it should not serve as a market substitute since, yk, they're just props with no extra function besides decoration.<br><br>I made this for my map that I'm releasing in a week or so, but I figured I should share it with the rest of the community.<br><br>Feel free to decompile it, use it in animations, use it in roleplay, use it in map decorations, use it in posters, whatever I don't really care as long as you don't reupload it without credit.<br><br>bye<br><br>Oh also hit up my ko-fi<br><br><a href='https://ko-fi.com/xaragame'><img src='https://i.ibb.co/0sq9sJn/61e11e22d8ff4a5b4a1b3346-Supportbutton-1.png'></a>",
+        "Previews":
+        [
+            {
+                "Link": "https://images.steamusercontent.com/ugc/10993422387599933440/D3A1566F51719461F5E8CB5BD4E627FD9FD460A6/?imw=637&imh=358&ima=fit&impolicy=Letterbox&imcolor=%23000000&letterbox=true",
+                "Type": "image"
+            },
+            {
+                "Link": "https://images.steamusercontent.com/ugc/16706541581484447214/3C6EA1ECE57DDB01406EE872B4CE24913DDD8C9D/?imw=637&imh=358&ima=fit&impolicy=Letterbox&imcolor=%23000000&letterbox=true",
+                "Type": "image"
+            },
+            {
+                "Link": "https://images.steamusercontent.com/ugc/18382214267557858789/699FBF9605D87D969EF0A6A3B3ADE93D5075A768/?imw=637&imh=358&ima=fit&impolicy=Letterbox&imcolor=%23000000&letterbox=true",
+                "Type": "image"
+            },
+            {
+                "Link": "https://images.steamusercontent.com/ugc/18339349723961579640/6D05E55ADC2CA07E0F27FA0211585F444E01947F/?imw=637&imh=358&ima=fit&impolicy=Letterbox&imcolor=%23000000&letterbox=true",
+                "Type": "image"
+            },
+            {
+                "Link": "https://images.steamusercontent.com/ugc/13089087737421124899/CD53344CA22D1833E0C3470709D1934D51E40B3F/?imw=637&imh=358&ima=fit&impolicy=Letterbox&imcolor=%23000000&letterbox=true",
+                "Type": "image"
+            }
+        ]
       }
     ],
     "Videos":
