@@ -11,21 +11,43 @@
   <link href="Styles/98.css" rel="stylesheet" type="text/css">
 </head>
   <body>
-	<div class="window" style="width: 100%; position: absolute; bottom: 0; left: 0; height: 5%" >
+      <div id="AppBox">
+          <a onClick="openAbout('portfolio-window')">
+            <img src="images/FileExplorerIcon.png">
+                <p>My Portfolio</p>
+        </a>
+          <a>
+            <img src="images/BlogIcon.png">
+                <p>Blog</p>
+        </a>
+          <a>
+            <img src="images/ContactIcon.png">
+                <p>Contact Me</p>
+        </a>
+          <a onClick="openAbout('about-window')">
+            <img src="images/AboutIcon.png">
+                <p>About Me</p>
+        </a>
+      </div>
+      
+      
+	<div class="window" style="display: flex; width: 100%; position: absolute; bottom: 0; left: 0; height: 5%" >
 	  <div class="status-bar" style="height: 100%">
 		  
 		<button onClick="openAbout('startwindow')" style="width: 10%; font-size: 2vw; font-family: HelveticaNeue; " ><img src="images/winbows.png" alt="start" style=" width: 17%;">Start</button>
 		<button onclick="window.location.href='https://www.youtube.com/@XaragameIsHere';" style="width: 5%; font-size: 2vw;"><img src="images/youboob.png" style=" width: 80%;" alt="Youtube" href="https://www.youtube.com/@XaragameIsHere"></button>
-		<button onclick="window.location.href='https://xaragame.itch.io/';" style="width: 5%; font-size: 2vw;"><img src="images/itch.svg" style=" width: 50%;" alt="Itch"></button>
+		<button onclick="window.location.href='https://xaragame.itch.io/';" style="width: 5%; font-size: 2vw;"><img src="images/itch.png" style=" width: 50%;" alt="Itch"></button>
 		<button onclick="window.location.href='https://steamcommunity.com/id/Za-ra-game/';" style="width: 5%; font-size: 2vw;"><img src="images/steam.png" style=" width: 50%;" alt="Steam"></button>
 		<button onclick="window.location.href='https://instagram.com/xaragameishere?igshid=NTc4MTIwNjQ2YQ==';" style="width: 5%; font-size: 2vw;"><img src="images/Instagram-Icon.png" style=" width: 50%;" alt="Instagram"></button>
 		<button onclick="window.location.href='https://ko-fi.com/xaragame';" style="width: 5%; font-size: 2vw;"><img src="images/kofi.png" style=" width: 50%;" alt="Ko-Fi"></button>
 		<button onclick="window.location.href='https://discord.com/users/441424104260763661';" style="width: 5%; font-size: 2vw;"><img src="images/Discord.png" style=" width: 50%;" alt="Discord"></button>
 		<button onclick="window.location.href='mailto:xaragamens30@gmail.com';" style="width: 5%; font-size: 2vw;"><img src="images/Mail.png" style=" width: 50%;" alt="Email"></button>
-		<button onclick="openAbout('playlist')" style="width: 5%; font-size: 2vw;"><img src="images/music.jpg" style=" width: 50%;" alt="Email"></button>
-	  </div>  
+		<button  onclick="window.location.href='https://www.tiktok.com/@xaragameishere';" style="width: 5%; font-size: 2vw;"><img src="images/tiktok.png" style=" width: 50%;" alt="tiktok"></button>
+	  </div>
 	 </div>
-	<div id="startwindow" class="window" style="position: absolute; height: 60%; aspect-ratio: 3/2; background: pink;">
+    
+    
+    <div id="startwindow" class="window" style="display: flex; flex-direction: column; width:45%; position: absolute; right: 1px;">
 
 	  <div class="title-bar">
 		<img src="/images/me.png" alt="me" style=" width: 2%;">
@@ -39,50 +61,18 @@
 	  </div>
 		<div style=" height: 40%; width: 100%;">
 			<div style="height: 100%">
-			   <a href="index.html"><img src="images/banner.png" alt="HTML tutorial" style="width:100%;height:100%;border:0"></a>
+			   <a href="index.html"><img src="images/banner.png" alt="HTML tutorial" style="width:100%; aspect-ratio: 4992/1404; border:0;"></a>
 
 			</div>
 		</div>
-		<div style=" width:40%; height: 50%; overflow-y:auto;">
-		 
-			<div style="top: 0%; right: 50%; height: auto; width: 100%; background-color: #f7f7f7;">
-			  <p class="light" style="display: inline; font-family: HelveticaNeue; font-size: 20pt;">Site Highlights</p>
-			</div>
-			<div class="listbox" style="border-left: 5px solid #d52d00;">
-			  <p class="boxtext"> <button onClick="openAbout('about-window')">About Me</button> </p>
-			</div>
-			<div class="listbox" style="border-left: 5px solid #ef7528;">
-			  <p class="boxtext"> <button onClick="openAbout('portfolio-window')">Portfolio</button> </p>
-			</div>
-			<div class="listbox" style="border-left: 5px solid #ff9b57;">
-			  <p class="boxtext"> <button onClick="openSpecificPortfolioItem('Code Snippets')">Code Snippets</button> </p>
-			</div>
-			<div class="listbox" style="border-left: 5px solid #ffffff;">
-			  <p class="boxtext"> <button onClick="openAbout('recommendations-window')">Media Recommendations</button></p>
-			</div>
-			<div class="listbox" style="border-left: 5px solid #d160a7;">
-			  <p class="boxtext"> <button >Life Updates</button></p>
-			</div>
-			<div class="listbox" style="border-left: 5px solid #b4568f;">
-			  <p class="boxtext"> <button>Development Requests</button></p>
-			</div>
-		  
-		</div>
-		<h1 class="gradient-text" style="position: absolute; text-align: center; font-size: 150%; width: 30%; top: 45%; right: 0%;">Xara's Selected Works</h1>
-		<p>&nbsp;</p>
-<ul id="showcaseBox" class="tree-view" style="position: absolute; overflow-y: hidden; overflow-x: auto; bottom: 1.5%; right: 1.5%; display: inline-flex; width: 50%; height: 45%; font-size: 150%">
-    <template id="Showcase">
-			<div style=" display: inline-flex; min-width: 300px; width: 50%; height: 100%; font-size: 150%">
-			<img id="icon" src="images/youboob.png" style=" width: 100%;" alt="Youtube" href="https://www.youtube.com/@XaragameIsHere">
-			  <a id="button"><p class="boxtext" style="position: relative; bottom: -75%; right: 20%;"> <button id ="text">Blog</button> </p></a>
-			</div>
-		</template>
-			
-			
-		</ul>
+        
+        
+		
 	</div>
 	  
-	<div id="about-window" class="window" style="display: none; position: absolute; top: 2%; left: 2%; width: 60%; height: 80%; max-height: 500px; max-width: 800px; background: pink; ">
+      
+      
+	<div id="about-window" class="window" style="display: none; position: absolute; top: 2%; left: 2%; width: 40%; aspect-ratio: 3/2; flex-direction: column; background: #df9aac; ">
 
 	  <div class="title-bar">
 		<img src="/images/me.png" alt="me" style=" width: 2%;">
@@ -94,27 +84,29 @@
 			</div>
 		  
 		</div>
-		<div style="overflow-y: scroll; height: 95.5%">
-			<p style="width: 100%; font-size: 25px; font-family: HelveticaNeue;"><span style="color:red;"> Xara Shaw:</span> <span style="color:orange;">Game Developer,</span> <span style="color:yellow;">Animator,</span> <span style="color:green;">Writer,</span> <span style="color:blue;">Transgender,</span> <span style="color:purple;">Odd Person</span></p>
-			<p style="width: 100%; font-size: 15px; font-family: HelveticaNeue;" >Hi, my name is Xara Neale Shaw, also known as Xaragame. I’m a black transfemme game developer, 3D animator and writer based out of Los Angeles. I’ve been a Roblox developer against my will since 2021 and a Unity Developer Since 2022. In short, my main goal in life, pushing the gay agenda and destroying neoliberal capitalism. In long, I seek to use my perspective in life to create games and animations that I find interesting while also trying to promote unionization in the game development industry and public transit in Los Angeles. I believe that the solution to most of our crises is one where the working class can organize with one another freely. I created this website in 2023 half as a way for me to try and separate myself further from the parasitic, addictive, life ruining, technofeudalist hellscape that is modern social media while staying online. And half as a way to stand out to college admissions officers. So if you're here to learn more about Xara Shaw, you're in the right place. Here you can find my previous work, my rants, my essays, my opinions, what media I'm into, and you can reach out to me for commissions and whatnot. Anyways, welcome to my spot on the internet, have a look around.
-			</p>
-	  </div>
+      <div id="description" class="Text-Box" style="flex-grow: 1;">
+          <h1>
+              Who is Xara Neale Shaw?
+          </h1>
+          <p style="color: #c43961">
+            Hey there,
+            <br><br>
+            My name is Xara Shaw, also known as Xaragame on the interwebs. I am a Los Angeles, CA based game designer, web designer, visual artist, writer and professionally unemployed woman. My main goal with my art is to make boundary pushing mixed media pieces that blur the lines between art, game and entertainment to closely inspect the human condition. In short, I want to make weird shit. My work often examines topics of race, queerness, community, romance and the urban form. I try to really reflect on the world around me in all its beauty and absurdity. I don't know if any of this is making sense, I feel like I sound superfucking pretentious and like an artsy weirdo. Oh well, maybe it's because I am superfucking pretentious and an artsy weirdo.
+            
+            <br><br>
+            I generally just make whatever project I feel most interested at that moment. I don't really have much rhyme or reason to what I do, however at the moment I do have some general trends in what I do. I've recently been drawing more cartoons and drawings in a series I call "The Valley of the Absurd" with these weird anthropomorphic mice. Additionally, I've been trying to work on my skills in public relations on my TikTok with posts informing people comedically about my local transit agency, Metro. Also, I've been doing a lot more web design work, as evidenced by this website and if you'd like me to do something similar for you then feel free to contact me. I'd love to work something out. Also Lately I've been writing more, especially romance stuff on my scribblehub and here on this website that I think you might enjoy. I'm almost always available for hire or commission so please, do contact me. Until then, enjoy my website, you can find my work in my portfolio. Read my rants on my blog. See what I'm reading, watching, playing or listening to in Media Recommendations. And check out my socials in the taskbar.
+            <br><br>
+            Thanks,
+            <br><br>
+            Xara Shaw
+            <br><br>
+            P.S. Fuck Trump, Fuck ICE, Free Palestine, Trans Rights Are Human Rights
+          </p>
+      </div>
 		
   </div>
 	  
-  <div id="playlist" class="window" style="display: block; position: absolute; top: 35%; left: 60%; height: 50%; aspect-ratio: 4/5; background: pink; ">
-    <div class="title-bar">
-			<img src="/images/me.png" alt="me" style=" width: 2%;">
-			<div class="title-bar-text">Xara's Playlist</div>
-				<div class="title-bar-controls">
-				  <button aria-label="Minimize"></button>
-				  <button aria-label="Maximize"></button>
-				  <button onClick="closeAbout('playlist')" aria-label="Close"></button>
-				</div>
-		
-		</div>
-	  <iframe allow="autoplay *; encrypted-media *; fullscreen *; clipboard-write" frameborder="0" height="94%" style="width:100%;max-width:660px;overflow:hidden;border-radius:10px;" sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-storage-access-by-user-activation allow-top-navigation-by-user-activation" src="https://embed.music.apple.com/us/playlist/xaras-playlist/pl.u-xlyNEpduklR7K8z"></iframe>
-</div>
+  
 	  <div id="lifeUpdates-window" class="window" style="display: none; position: absolute; top: 2%; left: 2%; width: 60%; height: 80%; background: pink;">
 
 	  <div class="title-bar">
@@ -162,7 +154,7 @@ minima nesciunt dolorem! Officiis iure rerum voluptates a cumque velit
 quibusdam sed amet tempora. </li>
 </ul>
 </div>
-	  <div id="lifeUpdates-window" class="window" style="display: none; position: absolute; top: 2%; left: 2%; width: 60%; height: 80%; background: pink;">
+	  <div id="lifeUpdates-window" class="window" style="display: none; position: absolute; top: 2%; left: 2%; width: 60%; height: 80%;">
 
 	  <div class="title-bar">
 		<img src="/images/me.png" alt="me" style=" width: 2%;">
@@ -191,7 +183,7 @@ quibusdam sed amet tempora. </li>
 		
 		  
 	 </div>
-	 <div id="portfolio-window" class="window" style="display: none; position: absolute; top: 2%; left: 2%; height: 70%; aspect-ratio: 3/2; background: pink;">
+	 <div id="portfolio-window" class="window" style="display: flex; flex-direction: column; position: absolute; top: 2%; left: 2%; height: 70%; aspect-ratio: 3/2; background: pink;">
 
 	  <div class="title-bar">
 		<img src="/images/me.png" alt="me" style=" width: 2%;">
@@ -243,6 +235,7 @@ quibusdam sed amet tempora. </li>
   		</div>
 	 </div>
 	
+    <script src="./scripts/SiteControl.js"></script>
    <script>
 	   console.log("Bitch");
 	   
@@ -303,11 +296,14 @@ quibusdam sed amet tempora. </li>
 					var thing = element.className.replace("tab ", "");
 					
 					cell1.innerHTML = "<a href= 'Pages/" + thing + ".html?mediaType="+ element.id +"&dataIndex=" + data +"'>"+ json[element.id][data]["Name"] +"</a>";
+                    
 					cell2.innerHTML = json[element.id][data]["Creation Date"];
+                    cell2.style = "color: #f06794";
 					cell3.innerHTML = json[element.id][data]["Description"];
+                    cell3.style = "color: #f06794";
 					
 				}
-		   
+		   /*
 		   for (var data in json["Highlights"])
 		   {
 			   const clone = template.content.cloneNode(true);
@@ -320,14 +316,14 @@ quibusdam sed amet tempora. </li>
 			   button.href = json["Highlights"][data]["Link"]
 			   text.innerHTML = json["Highlights"][data]["Name"];
 			   showcaseBox.appendChild(clone);
-		   }
+		   }*/
 	   }
 	   	
 	   
 	   
 	   	
 	   	function openAbout(elementToClose) {
-			document.getElementById(elementToClose).style.display = "block";
+			document.getElementById(elementToClose).style.display = "flex";
 		}
 		function closeAbout(elementToClose) {
 			document.getElementById(elementToClose).style.display = "none";

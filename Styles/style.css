@@ -97,6 +97,27 @@ body {
 		top: 167px;
 	}
 
+#AppBox{
+    display: flex;
+    flex-flow: column wrap;
+    position: absolute;
+    top: 1%;
+    bottom: 1%;
+    width: 40%;
+    height: 90%;
+}
+
+#AppBox a{
+    width: 50px;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: space-evenly;
+}
+
+#AppBox a p{
+    text-align: center;
+}
+    
 #tansFlag{
   transform: rotate(45deg);
   height: 40px;

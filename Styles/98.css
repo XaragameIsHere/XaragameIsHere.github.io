@@ -16,8 +16,8 @@
 }
 
 body {
-    color: #222;
-    font-family: Arial;
+    color: #ffffff;
+    font-family: "Windows98 Font", Arial;
     font-size: 12px
 }
 
@@ -74,7 +74,7 @@ input[type=submit] {
 button,
 input[type=reset],
 input[type=submit] {
-    background: silver;
+    background: #ffb4c8;
     box-shadow: inset -1px -1px #0a0a0a, inset 1px 1px #fff, inset -2px -2px grey, inset 2px 2px #dfdfdf
 }
 
@@ -126,22 +126,25 @@ input[type=submit]:disabled {
     text-shadow: 1px 1px 0 #fff
 }
 
+
+
 .window {
-    background: silver;
+    background: #df9aac;
     box-shadow: inset -1px -1px #0a0a0a, inset 1px 1px #dfdfdf, inset -2px -2px grey, inset 2px 2px #fff;
     padding: 3px
 }
 
 .title-bar {
     align-items: center;
-    background: linear-gradient(90deg, navy, #1084d0);
+    background: #f28aa5;
     display: flex;
     justify-content: space-between;
     padding: 3px 2px 3px 3px
 }
 
 .title-bar.inactive {
-    background: linear-gradient(90deg, grey, #b5b5b5)
+    background: #dd98aa;
+    /*linear-gradient(90deg, grey, #b5b5b5)*/
 }
 
 .title-bar-text {
@@ -568,6 +571,11 @@ a {
     color: #00f
 }
 
+a:hover {
+    opacity: 0.6;
+    background: #3769c9;
+}
+
 a:focus {
     outline: 1px dotted #00f
 }
@@ -575,9 +583,21 @@ a:focus {
 ul.tree-view {
     background: #fff;
     box-shadow: inset -1px -1px #fff, inset 1px 1px grey, inset -2px -2px #dfdfdf, inset 2px 2px #0a0a0a;
-    display: block;
     margin: 0;
     padding: 6px
+}
+
+div.Text-Box{
+    
+    background: #F9D7DF;
+    box-shadow: inset -1px -1px #fff, inset 1px 1px grey, inset -2px -2px #dfdfdf, inset 2px 2px #0a0a0a;
+    margin: 0;
+    padding: 6px
+}
+
+div.Text-Box h1{
+    font-size: 20px;
+    color: #f28aa5;
 }
 
 ul.tree-view li {
@@ -612,9 +632,9 @@ ul.tree-view ul>li {
 ul.tree-view ul>li:before {
     border-bottom: 1px dotted grey;
     content: "";
-    display: block;
+    /*display: block;*/
     left: -16px;
-    position: absolute;
+    /*position: absolute;*/
     top: 6px;
     width: 12px
 }
@@ -623,9 +643,9 @@ ul.tree-view ul>li:last-child:after {
     background: #fff;
     bottom: 0;
     content: "";
-    display: block;
+    /*display: block;*/
     left: -20px;
-    position: absolute;
+    /*position: absolute;*/
     top: 7px;
     width: 8px
 }
@@ -648,7 +668,7 @@ ul.tree-view details>summary:before {
     background-color: #fff;
     border: 1px solid grey;
     content: "+";
-    display: block;
+    /*display: block;*/
     float: left;
     height: 9px;
     line-height: 8px;
